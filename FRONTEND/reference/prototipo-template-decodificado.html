@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="68fc64c8-0e8d-4563-a05f-8af6ca6a352b"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("6d68b3ae-e2bc-49aa-91fe-6c2b77aa4966") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("80d02325-36da-4636-8e5a-4c18e466f755") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("ce51aa0a-2275-467d-aa93-821a5b2cd097") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c35b51ac-df8a-45f5-a773-56357452c58e") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c29a458e-3525-435b-bc00-b523795e8ed2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("76cfed86-0477-46dd-8aff-30b26f99df31") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("6d68b3ae-e2bc-49aa-91fe-6c2b77aa4966") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("80d02325-36da-4636-8e5a-4c18e466f755") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("ce51aa0a-2275-467d-aa93-821a5b2cd097") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c35b51ac-df8a-45f5-a773-56357452c58e") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c29a458e-3525-435b-bc00-b523795e8ed2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("76cfed86-0477-46dd-8aff-30b26f99df31") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("6d68b3ae-e2bc-49aa-91fe-6c2b77aa4966") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("80d02325-36da-4636-8e5a-4c18e466f755") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("ce51aa0a-2275-467d-aa93-821a5b2cd097") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c35b51ac-df8a-45f5-a773-56357452c58e") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c29a458e-3525-435b-bc00-b523795e8ed2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("76cfed86-0477-46dd-8aff-30b26f99df31") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("47c8095b-141e-43b9-afd8-add6bcee83f1") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("789d0a83-5015-4dca-ae38-45cd873b14bc") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("0c402cfd-3612-4c97-86cd-4a60f65221e0") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("afaf2607-b36b-4b3d-a26a-efd36191fca4") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("47c8095b-141e-43b9-afd8-add6bcee83f1") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("789d0a83-5015-4dca-ae38-45cd873b14bc") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("0c402cfd-3612-4c97-86cd-4a60f65221e0") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("afaf2607-b36b-4b3d-a26a-efd36191fca4") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("47c8095b-141e-43b9-afd8-add6bcee83f1") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("789d0a83-5015-4dca-ae38-45cd873b14bc") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("0c402cfd-3612-4c97-86cd-4a60f65221e0") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("afaf2607-b36b-4b3d-a26a-efd36191fca4") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("47c8095b-141e-43b9-afd8-add6bcee83f1") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("789d0a83-5015-4dca-ae38-45cd873b14bc") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("0c402cfd-3612-4c97-86cd-4a60f65221e0") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("afaf2607-b36b-4b3d-a26a-efd36191fca4") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("47c8095b-141e-43b9-afd8-add6bcee83f1") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("789d0a83-5015-4dca-ae38-45cd873b14bc") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("0c402cfd-3612-4c97-86cd-4a60f65221e0") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("afaf2607-b36b-4b3d-a26a-efd36191fca4") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  *{ box-sizing:border-box }
+  body{ margin:0 }
+  ::-webkit-scrollbar{ width:10px;height:10px }
+  ::-webkit-scrollbar-thumb{ background:rgba(120,140,170,.35);border-radius:10px;border:2px solid transparent;background-clip:padding-box }
+  input:focus,select:focus,textarea:focus{ outline:none;border-color:var(--primary) }
+  input::placeholder,textarea::placeholder{ color:color-mix(in srgb,var(--muted) 70%,transparent) }
+</style>
+</helmet>
+<div style="{{ rootStyle }}">
+<div style="{{ appStyle }}">
+
+  <!-- ===== TOP BAR ===== -->
+  <header style="display:flex;align-items:center;gap:14px;padding:0 18px;height:62px;background:var(--topbar);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:20;flex-shrink:0">
+    <div style="display:flex;align-items:center;gap:11px;min-width:0">
+      <div style="display:flex;align-items:center;justify-content:center;height:36px;padding:0 11px;border-radius:9px;background:linear-gradient(135deg,#1565d8,#0b3aa0);flex-shrink:0;box-shadow:0 4px 12px -2px rgba(21,101,216,.5)">
+        <span style="font:800 18px/1 'Plus Jakarta Sans';color:#fff;letter-spacing:-1px;font-style:italic">izzi</span>
+      </div>
+      <div style="min-width:0">
+        <div style="font:800 14px/1 'Plus Jakarta Sans';color:var(--text);letter-spacing:.2px">IZZI CELULARES</div>
+        <div style="font:600 9.5px/1.4 'Plus Jakarta Sans';color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-top:3px">Vendas · Assistência Técnica</div>
+      </div>
+    </div>
+
+    <div style="flex:1"></div>
+
+    <div style="display:flex;align-items:center;gap:5px;background:var(--surface2);border:1px solid var(--border);padding:4px;border-radius:11px">
+      <button onclick="{{ setThemeCorp }}" style="{{ tCorp }}">Azul</button>
+      <button onclick="{{ setThemeVib }}" style="{{ tVib }}">Vibrante</button>
+      <button onclick="{{ setThemeEsc }}" style="{{ tEsc }}">Escuro</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:5px;background:var(--surface2);border:1px solid var(--border);padding:4px;border-radius:11px">
+      <button onclick="{{ setViewDesktop }}" title="Desktop" style="{{ vDesk }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg></button>
+      <button onclick="{{ setViewMobile }}" title="Celular" style="{{ vMob }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><path d="M11 18h2"></path></svg></button>
+    </div>
+    <div style="width:1px;height:26px;background:var(--border)"></div>
+    <button onclick="{{ toggleRole }}" style="display:flex;align-items:center;gap:9px;background:var(--surface2);border:1px solid var(--border);padding:5px 9px 5px 6px;border-radius:11px;cursor:pointer">
+      <div style="{{ avatarStyle }}">{{ roleInitial }}</div>
+      <div style="text-align:left;line-height:1.1">
+        <div style="font:700 12px 'Plus Jakarta Sans';color:var(--text)">{{ roleName }}</div>
+        <div style="font:600 10px 'Plus Jakarta Sans';color:var(--muted)">{{ roleLabel }}</div>
+      </div>
+    </button>
+  </header>
+
+  <div style="display:flex;flex:1;min-height:0">
+
+    <!-- SIDEBAR -->
+    <sc-if value="{{ showSidebar }}" hint-placeholder-val="{{ true }}">
+    <aside style="width:222px;flex-shrink:0;background:var(--sidebar);display:flex;flex-direction:column;padding:18px 14px;gap:4px;overflow-y:auto">
+      <div style="font:700 10px 'Plus Jakarta Sans';letter-spacing:1.2px;text-transform:uppercase;color:var(--sidebarMuted);padding:6px 12px 8px">Menu</div>
+      <sc-if value="{{ showDashNav }}" hint-placeholder-val="{{ true }}">
+      <button onclick="{{ goDash }}" style="{{ navDashS }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"></rect><rect x="14" y="3" width="7" height="5" rx="1.5"></rect><rect x="14" y="12" width="7" height="9" rx="1.5"></rect><rect x="3" y="16" width="7" height="5" rx="1.5"></rect></svg><span>Início</span></button>
+      </sc-if>
+      <button onclick="{{ goOrd }}" style="{{ navOrdS }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6a1 1 0 0 1 1 1v1h2a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h2V4a1 1 0 0 1 1-1Z"></path><path d="M9 11h6M9 15h4"></path></svg><span>Ordens de Serviço</span></button>
+      <button onclick="{{ goCli }}" style="{{ navCliS }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg><span>Clientes</span></button>
+      <button onclick="{{ goConsulta }}" style="{{ navConsS }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg><span>Consultar</span></button>
+
+      <div style="flex:1"></div>
+      <div style="background:color-mix(in srgb,var(--sidebarMuted) 14%,transparent);border-radius:12px;padding:11px 12px;margin-bottom:8px">
+        <div style="font:600 10px 'Plus Jakarta Sans';color:var(--sidebarMuted);line-height:1.5">CNPJ 19.475.104/0001-80<br>Rua São Francisco, 33 · Osasco-SP<br>Tel 4384-0516</div>
+      </div>
+      <button onclick="{{ openNova }}" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:11px;border:none;border-radius:12px;background:var(--primary);color:#fff;font:700 13px 'Plus Jakarta Sans';cursor:pointer;box-shadow:0 6px 16px -4px color-mix(in srgb,var(--primary) 60%,transparent)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Nova OS
+      </button>
+    </aside>
+    </sc-if>
+
+    <main style="flex:1;min-width:0;overflow-y:auto;background:var(--bg)">
+      <div style="{{ mainPad }}">
+
+        <div style="display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px">
+          <div style="min-width:0">
+            <div style="font:600 11px 'Plus Jakarta Sans';letter-spacing:1px;text-transform:uppercase;color:var(--primary);margin-bottom:6px">{{ screenEyebrow }}</div>
+            <h1 style="margin:0;font:800 26px/1.1 'Plus Jakarta Sans';color:var(--text);letter-spacing:-.6px">{{ screenTitle }}</h1>
+            <p style="margin:7px 0 0;font:500 13.5px 'Plus Jakarta Sans';color:var(--muted)">{{ screenSubtitle }}</p>
+          </div>
+        </div>
+
+        <!-- ============ DASHBOARD ============ -->
+        <sc-if value="{{ isDash }}" hint-placeholder-val="{{ true }}">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px"><span style="display:inline-flex;align-items:center;gap:5px;font:700 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:#0f9d6b;background:#d8f3e6;padding:3px 9px;border-radius:99px">★ Novo no ASTECA web</span><span style="font:500 12px 'Plus Jakarta Sans';color:var(--muted)">Painel gerencial — não existe no Access original</span></div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-bottom:18px">
+            <sc-for list="{{ kpis }}" as="k" hint-placeholder-count="4">
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"><span style="font:600 12px 'Plus Jakarta Sans';color:var(--muted)">{{ k.label }}</span><span style="{{ k.dotStyle }}"></span></div>
+                <div style="font:800 27px/1 'Plus Jakarta Sans';color:var(--text);letter-spacing:-1px">{{ k.value }}</div>
+                <div style="{{ k.deltaStyle }}">{{ k.delta }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;gap:16px;flex-wrap:wrap">
+            <div style="flex:2 1 360px;min-width:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--border)"><h3 style="margin:0;font:700 14px 'Plus Jakarta Sans';color:var(--text)">Ordens recentes</h3><button onclick="{{ goOrd }}" style="background:none;border:none;color:var(--primary);font:700 12px 'Plus Jakarta Sans';cursor:pointer">Ver todas →</button></div>
+              <sc-for list="{{ recentOs }}" as="o" hint-placeholder-count="5">
+                <div onclick="{{ o.open }}" style="display:flex;align-items:center;gap:12px;padding:13px 18px;border-bottom:1px solid var(--border);cursor:pointer">
+                  <div style="font:700 13px 'JetBrains Mono';color:var(--primary);width:52px;flex-shrink:0">{{ o.num }}</div>
+                  <div style="flex:1;min-width:0"><div style="font:700 13px 'Plus Jakarta Sans';color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ o.cliente }}</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ o.aparelho }}</div></div>
+                  <span style="{{ o.statusStyle }}">{{ o.status }}</span>
+                  <div style="font:700 13px 'JetBrains Mono';color:var(--text);width:92px;text-align:right;flex-shrink:0">{{ o.valor }}</div>
+                </div>
+              </sc-for>
+            </div>
+            <div style="flex:1 1 250px;min-width:0;display:flex;flex-direction:column;gap:16px">
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:18px">
+                <h3 style="margin:0 0 16px;font:700 14px 'Plus Jakarta Sans';color:var(--text)">OS por status</h3>
+                <sc-for list="{{ statusDist }}" as="s" hint-placeholder-count="4">
+                  <div style="margin-bottom:13px"><div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="font:600 12px 'Plus Jakarta Sans';color:var(--muted)">{{ s.label }}</span><span style="font:700 12px 'Plus Jakarta Sans';color:var(--text)">{{ s.count }}</span></div><div style="height:7px;border-radius:6px;background:var(--surface2);overflow:hidden"><div style="{{ s.barStyle }}"></div></div></div>
+                </sc-for>
+              </div>
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:18px">
+                <h3 style="margin:0 0 6px;font:700 14px 'Plus Jakarta Sans';color:var(--text)">Aparelhos prontos</h3>
+                <div style="font:500 11.5px 'Plus Jakarta Sans';color:var(--muted);margin-bottom:12px">Aguardando retirada do cliente</div>
+                <sc-for list="{{ prontos }}" as="p" hint-placeholder-count="2">
+                  <div onclick="{{ p.open }}" style="display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--border);cursor:pointer"><div style="font:700 12px 'JetBrains Mono';color:var(--primary)">{{ p.num }}</div><div style="flex:1;min-width:0;font:600 12px 'Plus Jakarta Sans';color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ p.cliente }}</div><div style="font:700 12px 'JetBrains Mono';color:var(--text)">{{ p.valor }}</div></div>
+                </sc-for>
+                <sc-if value="{{ noProntos }}" hint-placeholder-val="{{ false }}"><div style="padding:14px 0;text-align:center;font:500 12px 'Plus Jakarta Sans';color:var(--muted)">Nenhum aparelho pronto.</div></sc-if>
+              </div>
+            </div>
+          </div>
+        </div>
+        </sc-if>
+
+        <!-- ============ ORDENS ============ -->
+        <sc-if value="{{ isOrd }}" hint-placeholder-val="{{ true }}">
+        <div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px">
+            <div style="position:relative;flex:1;min-width:200px">
+              <svg style="position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--muted)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+              <input value="{{ query }}" onchange="{{ onQuery }}" placeholder="Buscar por OS, cliente, aparelho ou defeito…" style="width:100%;padding:11px 13px 11px 38px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:500 13px 'Plus Jakarta Sans'">
+            </div>
+            <button onclick="{{ openNova }}" style="display:flex;align-items:center;gap:7px;padding:11px 15px;border:none;border-radius:12px;background:var(--primary);color:#fff;font:700 13px 'Plus Jakarta Sans';cursor:pointer;white-space:nowrap"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Nova OS</button>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">
+            <sc-for list="{{ filterChips }}" as="c" hint-placeholder-count="6"><button onclick="{{ c.onClick }}" style="{{ c.style }}">{{ c.label }}</button></sc-for>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <sc-for list="{{ osList }}" as="o" hint-placeholder-count="6">
+              <div onclick="{{ o.open }}" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:16px 18px;box-shadow:var(--shadow);cursor:pointer;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;align-items:center">
+                <div><div style="display:flex;align-items:center;gap:7px"><span style="font:700 13px 'JetBrains Mono';color:var(--primary)">OS {{ o.num }}</span><span style="{{ o.tipoStyle }}">{{ o.tipo }}</span></div><div style="font:700 14px 'Plus Jakarta Sans';color:var(--text);margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ o.cliente }}</div></div>
+                <div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted)">Aparelho</div><div style="font:600 13px 'Plus Jakarta Sans';color:var(--text);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ o.aparelho }}</div></div>
+                <div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted)">Defeito / Item</div><div style="font:600 13px 'Plus Jakarta Sans';color:var(--text);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ o.defeito }}</div></div>
+                <div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:5px">Status</div><span style="{{ o.statusStyle }}">{{ o.status }}</span></div>
+                <div style="text-align:right"><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted)">Valor</div><div style="font:700 15px 'JetBrains Mono';color:var(--text);margin-top:4px">{{ o.valor }}</div></div>
+              </div>
+            </sc-for>
+            <sc-if value="{{ osEmpty }}" hint-placeholder-val="{{ false }}"><div style="text-align:center;padding:50px;color:var(--muted);font:500 14px 'Plus Jakarta Sans'">Nenhuma ordem encontrada.</div></sc-if>
+          </div>
+        </div>
+        </sc-if>
+
+        <!-- ============ OS DETAIL ============ -->
+        <sc-if value="{{ isOsDetail }}" hint-placeholder-val="{{ false }}">
+        <div>
+          <button onclick="{{ goOrd }}" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;color:var(--muted);font:600 13px 'Plus Jakarta Sans';cursor:pointer;margin-bottom:14px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>Voltar para ordens</button>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:20px;margin-bottom:16px;display:flex;gap:16px;flex-wrap:wrap;align-items:center">
+            <div style="min-width:0;flex:1">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap"><span style="font:700 18px 'JetBrains Mono';color:var(--text)">OS {{ os.num }}</span><span style="{{ os.statusStyle }}">{{ os.status }}</span><span style="{{ os.tipoStyle }}">{{ os.tipo }}</span><sc-if value="{{ os.chip }}" hint-placeholder-val="{{ false }}"><span style="{{ tagStyle }}">Chip</span></sc-if><sc-if value="{{ os.bateria }}" hint-placeholder-val="{{ false }}"><span style="{{ tagStyle }}">Bateria</span></sc-if></div>
+              <div style="font:600 14px 'Plus Jakarta Sans';color:var(--muted);margin-top:7px">{{ os.aparelho }} · {{ os.cliente }}</div>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button onclick="{{ advanceStatus }}" style="display:flex;align-items:center;gap:6px;padding:10px 14px;border:none;border-radius:11px;background:var(--primary);color:#fff;font:700 12.5px 'Plus Jakarta Sans';cursor:pointer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>Avançar status</button>
+              <button onclick="{{ openRecibo }}" style="padding:10px 14px;border:1px solid var(--border);border-radius:11px;background:var(--surface2);color:var(--text);font:700 12.5px 'Plus Jakarta Sans';cursor:pointer">Orçamento / Recibo</button>
+              <button onclick="{{ cancelOs }}" style="padding:10px 14px;border:1px solid var(--border);border-radius:11px;background:var(--surface2);color:#c43b3b;font:700 12.5px 'Plus Jakarta Sans';cursor:pointer">Cancelar</button>
+            </div>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:20px 22px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap">
+            <sc-for list="{{ os.steps }}" as="st" hint-placeholder-count="4"><div style="flex:1;min-width:110px"><div style="display:flex;align-items:center;gap:9px"><div style="{{ st.dotStyle }}">{{ st.num }}</div><div style="{{ st.lineStyle }}"></div></div><div style="{{ st.labelStyle }}">{{ st.label }}</div></div></sc-for>
+          </div>
+          <div style="display:flex;gap:16px;flex-wrap:wrap">
+            <div style="flex:2 1 340px;min-width:0;display:flex;flex-direction:column;gap:16px">
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:20px">
+                <h3 style="margin:0 0 14px;font:700 14px 'Plus Jakarta Sans';color:var(--text)">Aparelho e defeito</h3>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px 18px">
+                  <div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:4px">Marca</div><div style="font:700 13px 'Plus Jakarta Sans';color:var(--text)">{{ os.marca }}</div></div>
+                  <div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:4px">Modelo</div><div style="font:700 13px 'Plus Jakarta Sans';color:var(--text)">{{ os.modelo }}</div></div>
+                  <div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:4px">Defeito / Item</div><div style="font:700 13px 'Plus Jakarta Sans';color:var(--text)">{{ os.defeito }}</div></div>
+                </div>
+                <div style="margin-top:16px"><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:6px">Observações</div><p style="margin:0;font:500 13px/1.6 'Plus Jakarta Sans';color:var(--muted)">{{ os.obs }}</p></div>
+              </div>
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:20px;display:flex;align-items:center;justify-content:space-between"><div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:3px">Valor do serviço</div><div style="font:500 12px 'Plus Jakarta Sans';color:var(--muted)">Abertura em {{ os.data }}</div></div><div style="font:800 24px 'JetBrains Mono';color:var(--primary)">{{ os.valor }}</div></div>
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:20px">
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px"><h3 style="margin:0;font:700 14px 'Plus Jakarta Sans';color:var(--text)">Histórico</h3><span style="font:700 9px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.5px;color:#0f9d6b;background:#d8f3e6;padding:2px 7px;border-radius:99px">novo</span></div>
+                <sc-for list="{{ os.historico }}" as="h" hint-placeholder-count="3"><div style="display:flex;gap:13px;padding-bottom:16px"><div style="display:flex;flex-direction:column;align-items:center"><div style="width:10px;height:10px;border-radius:50%;background:var(--primary);margin-top:3px;flex-shrink:0"></div><div style="width:2px;flex:1;background:var(--border);margin-top:3px"></div></div><div><div style="font:700 12.5px 'Plus Jakarta Sans';color:var(--text)">{{ h.evento }}</div><div style="font:500 11.5px 'JetBrains Mono';color:var(--muted);margin-top:2px">{{ h.data }}</div></div></div></sc-for>
+              </div>
+            </div>
+            <div style="flex:1 1 250px;min-width:0">
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:20px;position:sticky;top:8px">
+                <div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:12px">Cliente</div>
+                <div onclick="{{ os.openCli }}" style="cursor:pointer;display:flex;align-items:center;gap:11px"><div style="width:42px;height:42px;border-radius:12px;background:var(--primarysoft);color:var(--primary);display:flex;align-items:center;justify-content:center;font:800 16px 'Plus Jakarta Sans';flex-shrink:0">{{ os.cliInitial }}</div><div style="min-width:0"><div style="font:700 14px 'Plus Jakarta Sans';color:var(--text)">{{ os.cliente }}</div><div style="font:500 12px 'JetBrains Mono';color:var(--muted)">{{ os.doc }}</div></div></div>
+                <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px">
+                  <div style="display:flex;align-items:center;gap:9px;font:600 12.5px 'Plus Jakarta Sans';color:var(--text)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2"><path d="M3 5a2 2 0 0 1 2-2h2l2 5-2.5 1.5a12 12 0 0 0 5 5L20 17l-2 4a18 18 0 0 1-15-15Z"></path></svg>{{ os.telefone }}</div>
+                  <div style="display:flex;align-items:center;gap:9px;font:600 12.5px 'Plus Jakarta Sans';color:var(--text)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect></svg>{{ os.celular }}</div>
+                  <div style="display:flex;align-items:center;gap:9px;font:600 12px 'Plus Jakarta Sans';color:var(--text);word-break:break-all"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>{{ os.email }}</div>
+                  <div style="display:flex;align-items:flex-start;gap:9px;font:600 12px 'Plus Jakarta Sans';color:var(--text)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2" style="flex-shrink:0;margin-top:1px"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>{{ os.endereco }}</div>
+                </div>
+                <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--border);display:flex;justify-content:space-between"><div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted)">Atendente</div><div style="font:700 12.5px 'Plus Jakarta Sans';color:var(--text);margin-top:3px">{{ os.atendente }}</div></div><div style="text-align:right"><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted)">Cód.</div><div style="font:700 12.5px 'JetBrains Mono';color:var(--text);margin-top:3px">{{ os.cod }}</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </sc-if>
+
+        <!-- ============ CLIENTES ============ -->
+        <sc-if value="{{ isCli }}" hint-placeholder-val="{{ false }}">
+        <div>
+          <div style="position:relative;max-width:420px;margin-bottom:16px">
+            <svg style="position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--muted)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <input value="{{ cliQuery }}" onchange="{{ onCliQuery }}" placeholder="Buscar cliente por nome ou CPF…" style="width:100%;padding:11px 13px 11px 38px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:500 13px 'Plus Jakarta Sans'">
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:13px">
+            <sc-for list="{{ cliList }}" as="c" hint-placeholder-count="6">
+              <div onclick="{{ c.open }}" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);cursor:pointer">
+                <div style="display:flex;align-items:center;gap:12px"><div style="width:44px;height:44px;border-radius:13px;background:var(--primarysoft);color:var(--primary);display:flex;align-items:center;justify-content:center;font:800 17px 'Plus Jakarta Sans';flex-shrink:0">{{ c.initial }}</div><div style="min-width:0"><div style="font:700 14.5px 'Plus Jakarta Sans';color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ c.nome }}</div><div style="font:500 12px 'JetBrains Mono';color:var(--muted)">{{ c.doc }}</div></div></div>
+                <div style="display:flex;justify-content:space-between;margin-top:15px;padding-top:14px;border-top:1px solid var(--border)"><div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.5px;color:var(--muted)">Ordens</div><div style="font:700 13px 'JetBrains Mono';color:var(--primary);margin-top:3px">{{ c.osCount }}</div></div><div style="text-align:right"><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.5px;color:var(--muted)">Total gasto</div><div style="font:700 13px 'JetBrains Mono';color:var(--text);margin-top:3px">{{ c.total }}</div></div></div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        </sc-if>
+
+        <!-- ============ CLIENTE DETAIL ============ -->
+        <sc-if value="{{ isCliDetail }}" hint-placeholder-val="{{ false }}">
+        <div>
+          <button onclick="{{ goCli }}" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;color:var(--muted);font:600 13px 'Plus Jakarta Sans';cursor:pointer;margin-bottom:14px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>Voltar para clientes</button>
+          <div style="display:flex;gap:16px;flex-wrap:wrap">
+            <div style="flex:1 1 250px;min-width:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:22px;height:fit-content">
+              <div style="width:60px;height:60px;border-radius:16px;background:var(--primarysoft);color:var(--primary);display:flex;align-items:center;justify-content:center;font:800 24px 'Plus Jakarta Sans';margin-bottom:14px">{{ cli.initial }}</div>
+              <div style="font:800 18px 'Plus Jakarta Sans';color:var(--text)">{{ cli.nome }}</div>
+              <div style="font:500 13px 'JetBrains Mono';color:var(--muted);margin-top:3px">{{ cli.doc }}</div>
+              <div style="margin-top:18px;display:flex;flex-direction:column;gap:12px">
+                <div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin-bottom:3px">Telefone / Celular</div><div style="font:600 13px 'Plus Jakarta Sans';color:var(--text)">{{ cli.telefone }} · {{ cli.celular }}</div></div>
+                <div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin-bottom:3px">E-mail</div><div style="font:600 13px 'Plus Jakarta Sans';color:var(--text);word-break:break-all">{{ cli.email }}</div></div>
+                <div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin-bottom:3px">Endereço</div><div style="font:600 13px 'Plus Jakarta Sans';color:var(--text)">{{ cli.endereco }}</div></div>
+                <div style="display:flex;gap:18px"><div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin-bottom:3px">Nasc.</div><div style="font:600 13px 'Plus Jakarta Sans';color:var(--text)">{{ cli.nasc }}</div></div><div><div style="font:600 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin-bottom:3px">RG</div><div style="font:600 13px 'Plus Jakarta Sans';color:var(--text)">{{ cli.rg }}</div></div></div>
+              </div>
+            </div>
+            <div style="flex:2 1 340px;min-width:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden">
+              <div style="padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between"><h3 style="margin:0;font:700 14px 'Plus Jakarta Sans';color:var(--text)">Ordens do cliente</h3><span style="font:700 12px 'JetBrains Mono';color:var(--muted)">Total {{ cli.total }}</span></div>
+              <sc-for list="{{ cli.os }}" as="o" hint-placeholder-count="3"><div onclick="{{ o.open }}" style="display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--border);cursor:pointer"><div style="font:700 12px 'JetBrains Mono';color:var(--primary);width:48px;flex-shrink:0">{{ o.num }}</div><div style="flex:1;min-width:0;font:600 13px 'Plus Jakarta Sans';color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ o.aparelho }}</div><span style="{{ o.statusStyle }}">{{ o.status }}</span><div style="font:700 13px 'JetBrains Mono';color:var(--text);width:88px;text-align:right;flex-shrink:0">{{ o.valor }}</div></div></sc-for>
+              <sc-if value="{{ cli.noOs }}" hint-placeholder-val="{{ false }}"><div style="padding:30px;text-align:center;color:var(--muted);font:500 13px 'Plus Jakarta Sans'">Sem ordens registradas.</div></sc-if>
+            </div>
+          </div>
+        </div>
+        </sc-if>
+
+        <!-- ============ CONSULTAR ============ -->
+        <sc-if value="{{ isConsulta }}" hint-placeholder-val="{{ false }}">
+        <div>
+          <div style="display:flex;gap:6px;background:var(--surface2);border:1px solid var(--border);padding:5px;border-radius:13px;width:fit-content;margin-bottom:18px">
+            <button onclick="{{ setModoOs }}" style="{{ modoOsStyle }}">Por nº da OS</button>
+            <button onclick="{{ setModoCpf }}" style="{{ modoCpfStyle }}">Por CPF</button>
+          </div>
+
+          <sc-if value="{{ modoOs }}" hint-placeholder-val="{{ true }}">
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:24px;max-width:520px">
+            <div style="font:700 15px 'Plus Jakarta Sans';color:var(--text);margin-bottom:4px">Consultar OS</div>
+            <div style="font:500 12.5px 'Plus Jakarta Sans';color:var(--muted);margin-bottom:16px">Digite o número da OS (ex: 106, 99, 96)</div>
+            <div style="display:flex;gap:10px"><input value="{{ qOs }}" onchange="{{ onQOs }}" onkeydown="{{ onQOsKey }}" placeholder="Nº da OS" style="flex:1;padding:13px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface2);color:var(--text);font:600 14px 'JetBrains Mono'"><button onclick="{{ buscaOs }}" style="padding:13px 22px;border:none;border-radius:12px;background:var(--primary);color:#fff;font:700 14px 'Plus Jakarta Sans';cursor:pointer">Abrir</button></div>
+            <sc-if value="{{ osNotFound }}" hint-placeholder-val="{{ false }}"><div style="margin-top:14px;font:600 13px 'Plus Jakarta Sans';color:#c43b3b">OS não encontrada.</div></sc-if>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ modoCpf }}" hint-placeholder-val="{{ false }}">
+          <div style="max-width:560px">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:24px;margin-bottom:16px">
+              <div style="font:700 15px 'Plus Jakarta Sans';color:var(--text);margin-bottom:4px">Consultar por CPF</div>
+              <div style="font:500 12.5px 'Plus Jakarta Sans';color:var(--muted);margin-bottom:16px">Lista todas as OS do cliente e o total — como a tela CONSULTA CPF</div>
+              <div style="display:flex;gap:10px"><input value="{{ qCpf }}" onchange="{{ onQCpf }}" onkeydown="{{ onQCpfKey }}" placeholder="CPF (ex: 391.264.098-01)" style="flex:1;padding:13px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface2);color:var(--text);font:600 14px 'JetBrains Mono'"><button onclick="{{ buscaCpf }}" style="padding:13px 22px;border:none;border-radius:12px;background:var(--primary);color:#fff;font:700 14px 'Plus Jakarta Sans';cursor:pointer">Buscar</button></div>
+            </div>
+            <sc-if value="{{ cpfDone }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <sc-if value="{{ cpfFound }}" hint-placeholder-val="{{ true }}">
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden">
+                <div style="padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:11px"><div style="width:36px;height:36px;border-radius:10px;background:var(--primarysoft);color:var(--primary);display:flex;align-items:center;justify-content:center;font:800 14px 'Plus Jakarta Sans'">{{ cpfCli.initial }}</div><div><div style="font:700 14px 'Plus Jakarta Sans';color:var(--text)">{{ cpfCli.nome }}</div><div style="font:500 11.5px 'JetBrains Mono';color:var(--muted)">{{ cpfCli.doc }}</div></div></div>
+                <div style="display:flex;padding:9px 18px;background:var(--surface2);font:700 10px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.6px;color:var(--muted)"><div style="width:70px">OS</div><div style="flex:1">Aparelho</div><div style="width:90px;text-align:right">Valor</div></div>
+                <sc-for list="{{ cpfOs }}" as="o" hint-placeholder-count="4"><div onclick="{{ o.open }}" style="display:flex;align-items:center;padding:12px 18px;border-top:1px solid var(--border);cursor:pointer"><div style="width:70px;font:700 13px 'JetBrains Mono';color:var(--primary)">{{ o.num }}</div><div style="flex:1;min-width:0"><div style="font:600 13px 'Plus Jakarta Sans';color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ o.aparelho }}</div><span style="{{ o.statusStyle }}">{{ o.status }}</span></div><div style="width:90px;text-align:right;font:700 13px 'JetBrains Mono';color:var(--text)">{{ o.valor }}</div></div></sc-for>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:15px 18px;border-top:2px solid var(--border);background:var(--surface2)"><span style="font:700 13px 'Plus Jakarta Sans';color:var(--text)">TOTAL</span><span style="font:800 18px 'JetBrains Mono';color:var(--primary)">{{ cpfTotal }}</span></div>
+              </div>
+              </sc-if>
+              <sc-if value="{{ cpfEmpty }}" hint-placeholder-val="{{ false }}"><div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:40px;text-align:center;color:var(--muted);font:500 14px 'Plus Jakarta Sans'">Nenhum cliente com esse CPF. Tente 391.264.098-01.</div></sc-if>
+            </div>
+            </sc-if>
+          </div>
+          </sc-if>
+        </div>
+        </sc-if>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <sc-if value="{{ showBottomNav }}" hint-placeholder-val="{{ false }}">
+  <nav style="display:flex;flex-shrink:0;background:var(--topbar);border-top:1px solid var(--border);padding:8px 6px;justify-content:space-around">
+    <sc-if value="{{ showDashNav }}" hint-placeholder-val="{{ true }}"><button onclick="{{ goDash }}" style="{{ bnDash }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"></rect><rect x="14" y="3" width="7" height="5" rx="1.5"></rect><rect x="14" y="12" width="7" height="9" rx="1.5"></rect><rect x="3" y="16" width="7" height="5" rx="1.5"></rect></svg><span style="font:600 9.5px 'Plus Jakarta Sans'">Início</span></button></sc-if>
+    <button onclick="{{ goOrd }}" style="{{ bnOrd }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6a1 1 0 0 1 1 1v1h2a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h2V4a1 1 0 0 1 1-1Z"></path><path d="M9 11h6M9 15h4"></path></svg><span style="font:600 9.5px 'Plus Jakarta Sans'">Ordens</span></button>
+    <button onclick="{{ openNova }}" style="display:flex;flex-direction:column;align-items:center;gap:3px;flex:1;padding:6px 2px;border:none;background:none;cursor:pointer;color:var(--primary)"><div style="width:34px;height:34px;border-radius:11px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;margin-top:-8px;box-shadow:0 6px 14px -3px color-mix(in srgb,var(--primary) 60%,transparent)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></div><span style="font:600 9.5px 'Plus Jakarta Sans'">Nova OS</span></button>
+    <button onclick="{{ goCli }}" style="{{ bnCli }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg><span style="font:600 9.5px 'Plus Jakarta Sans'">Clientes</span></button>
+    <button onclick="{{ goConsulta }}" style="{{ bnCons }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg><span style="font:600 9.5px 'Plus Jakarta Sans'">Consultar</span></button>
+  </nav>
+  </sc-if>
+
+  <!-- ===== MODAL NOVA OS (Cadastro) ===== -->
+  <sc-if value="{{ showModal }}" hint-placeholder-val="{{ false }}">
+  <div onclick="{{ closeModal }}" style="position:absolute;inset:0;z-index:50;background:rgba(8,15,30,.55);display:flex;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;backdrop-filter:blur(2px)">
+    <div onclick="{{ stop }}" style="width:100%;max-width:560px;background:var(--surface);border:1px solid var(--border);border-radius:18px;box-shadow:0 24px 70px -20px rgba(0,0,0,.5);margin:auto">
+      <div style="padding:20px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between"><div><h3 style="margin:0;font:800 17px 'Plus Jakarta Sans';color:var(--text)">Nova Ordem de Serviço</h3><div style="font:500 12px 'Plus Jakarta Sans';color:var(--muted);margin-top:3px">Cadastro de cliente + aparelho (equivale ao Frm_Cli)</div></div><button onclick="{{ closeModal }}" style="width:32px;height:32px;border:none;border-radius:9px;background:var(--surface2);color:var(--muted);font-size:18px;cursor:pointer">×</button></div>
+      <div style="padding:20px 22px;display:flex;flex-direction:column;gap:18px">
+        <div>
+          <div style="font:700 11px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.7px;color:var(--primary);margin-bottom:11px">Cliente</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px">
+            <div><label style="display:block;font:700 11px 'Plus Jakarta Sans';color:var(--text);margin-bottom:6px">CPF / CNPJ</label><input value="{{ form.cpf }}" onchange="{{ onF_cpf }}" placeholder="000.000.000-00" style="{{ inp }}"></div>
+            <div><label style="display:block;font:700 11px 'Plus Jakarta Sans';color:var(--text);margin-bottom:6px">Nome</label><input value="{{ form.nome }}" onchange="{{ onF_nome }}" placeholder="Nome do cliente" style="{{ inp }}"></div>
+            <div><label style="display:block;font:700 11px 'Plus Jakarta Sans';color:var(--text);margin-bottom:6px">Telefone</label><input value="{{ form.telefone }}" onchange="{{ onF_tel }}" placeholder="(11) 0000-0000" style="{{ inp }}"></div>
+            <div><label style="display:block;font:700 11px 'Plus Jakarta Sans';color:var(--text);margin-bottom:6px">Celular</label><input value="{{ form.celular }}" onchange="{{ onF_cel }}" placeholder="(11) 90000-0000" style="{{ inp }}"></div>
+          </div>
+        </div>
+        <div>
+          <div style="font:700 11px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.7px;color:var(--primary);margin-bottom:11px">Atendimento</div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+            <div style="display:flex;gap:7px"><sc-for list="{{ tipoOptions }}" as="t" hint-placeholder-count="2"><button onclick="{{ t.onClick }}" style="{{ t.style }}">{{ t.label }}</button></sc-for></div>
+            <div style="width:1px;height:24px;background:var(--border)"></div>
+            <button onclick="{{ toggleChip }}" style="{{ chipBtn }}">Chip</button>
+            <button onclick="{{ toggleBateria }}" style="{{ bateriaBtn }}">Bateria</button>
+          </div>
+        </div>
+        <div>
+          <div style="font:700 11px 'Plus Jakarta Sans';text-transform:uppercase;letter-spacing:.7px;color:var(--primary);margin-bottom:11px">Aparelho</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px">
+            <div><label style="display:block;font:700 11px 'Plus Jakarta Sans';color:var(--text);margin-bottom:6px">Marca</label><input value="{{ form.marca }}" onchange="{{ onF_marca }}" placeholder="Samsung, Motorola…" style="{{ inp }}"></div>
+            <div><label style="display:block;font:700 11px 'Plus Jakarta Sans';color:var(--text);margin-bottom:6px">Modelo</label><input value="{{ form.modelo }}" onchange="{{ onF_modelo }}" placeholder="Galaxy A14…" style="{{ inp }}"></div>
+            <div><label style="display:block;font:700 11px 'Plus Jakarta Sans';color:var(--text);margin-bottom:6px">Defeito / Item</label><input value="{{ form.defeito }}" onchange="{{ onF_defeito }}" placeholder="Troca de tela…" style="{{ inp }}"></div>
+            <div><label style="display:block;font:700 11px 'Plus Jakarta Sans';color:var(--text);margin-bottom:6px">Valor (R$)</label><input value="{{ form.valor }}" onchange="{{ onF_valor }}" placeholder="0,00" style="{{ inp }}"></div>
+          </div>
+          <div style="margin-top:11px"><label style="display:block;font:700 11px 'Plus Jakarta Sans';color:var(--text);margin-bottom:6px">Observações</label><textarea value="{{ form.obs }}" onchange="{{ onF_obs }}" rows="2" placeholder="Senha do aparelho, acessórios entregues, prazo…" style="{{ inp }};resize:vertical"></textarea></div>
+        </div>
+      </div>
+      <div style="padding:16px 22px;border-top:1px solid var(--border);display:flex;gap:10px;justify-content:flex-end">
+        <button onclick="{{ limparForm }}" style="padding:11px 18px;border:1px solid var(--border);border-radius:11px;background:var(--surface2);color:var(--muted);font:700 13px 'Plus Jakarta Sans';cursor:pointer">Limpar</button>
+        <button onclick="{{ submitNova }}" style="padding:11px 22px;border:none;border-radius:11px;background:var(--primary);color:#fff;font:700 13px 'Plus Jakarta Sans';cursor:pointer">Salvar OS</button>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ===== MODAL RECIBO ===== -->
+  <sc-if value="{{ showRecibo }}" hint-placeholder-val="{{ false }}">
+  <div onclick="{{ closeRecibo }}" style="position:absolute;inset:0;z-index:50;background:rgba(8,15,30,.55);display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(2px)">
+    <div onclick="{{ stop }}" style="width:100%;max-width:420px;background:#fff;border-radius:14px;box-shadow:0 24px 70px -20px rgba(0,0,0,.5);overflow:hidden;color:#111">
+      <div style="padding:20px 22px;border-bottom:1px dashed #d0d0d0;display:flex;align-items:center;gap:11px"><div style="display:flex;align-items:center;justify-content:center;height:34px;padding:0 10px;border-radius:8px;background:linear-gradient(135deg,#1565d8,#0b3aa0)"><span style="font:800 16px 'Plus Jakarta Sans';color:#fff;font-style:italic">izzi</span></div><div><div style="font:800 13px 'Plus Jakarta Sans';color:#111">IZZI CELULARES</div><div style="font:500 10px 'Plus Jakarta Sans';color:#777">CNPJ 19.475.104/0001-80 · Tel 4384-0516</div></div></div>
+      <div style="padding:20px 22px">
+        <div style="text-align:center;font:700 12px 'Plus Jakarta Sans';letter-spacing:2px;color:#777;margin-bottom:16px">ORÇAMENTO / RECIBO — OS {{ os.num }}</div>
+        <div style="display:flex;flex-direction:column;gap:9px;font:500 12.5px 'Plus Jakarta Sans';color:#333">
+          <div style="display:flex;justify-content:space-between"><span style="color:#888">Cliente</span><span style="font-weight:700;color:#111">{{ os.cliente }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:#888">CPF/CNPJ</span><span style="font-family:'JetBrains Mono';color:#111">{{ os.doc }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:#888">Aparelho</span><span style="font-weight:700;color:#111">{{ os.aparelho }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:#888">Serviço</span><span style="color:#111">{{ os.defeito }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:#888">Data</span><span style="font-family:'JetBrains Mono';color:#111">{{ os.data }}</span></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px dashed #d0d0d0"><span style="font:700 14px 'Plus Jakarta Sans';color:#111">TOTAL</span><span style="font:800 22px 'JetBrains Mono';color:#1565d8">{{ os.valor }}</span></div>
+        <div style="margin-top:18px;text-align:center;font:500 10px 'Plus Jakarta Sans';color:#999;line-height:1.6">Garantia de 90 dias para o serviço executado.<br>Aparelhos não retirados em 90 dias serão descartados.</div>
+      </div>
+      <div style="padding:14px 22px;border-top:1px solid #eee;display:flex;gap:10px;justify-content:flex-end"><button onclick="{{ closeRecibo }}" style="padding:10px 16px;border:1px solid #ddd;border-radius:10px;background:#f5f5f5;color:#555;font:700 12.5px 'Plus Jakarta Sans';cursor:pointer">Fechar</button><button onclick="{{ printRecibo }}" style="padding:10px 18px;border:none;border-radius:10px;background:#1565d8;color:#fff;font:700 12.5px 'Plus Jakarta Sans';cursor:pointer">Imprimir</button></div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- TOAST -->
+  <sc-if value="{{ showToast }}" hint-placeholder-val="{{ false }}">
+  <div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:60;background:#0f1c2e;color:#fff;padding:13px 20px;border-radius:13px;font:700 13px 'Plus Jakarta Sans';box-shadow:0 16px 40px -8px rgba(0,0,0,.4);display:flex;align-items:center;gap:9px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3ddc91" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>{{ toast }}</div>
+  </sc-if>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;startTheme&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: &quot;corp&quot;, &quot;options&quot;: [&quot;corp&quot;, &quot;vibrante&quot;, &quot;escuro&quot;], &quot;tsType&quot;: &quot;string&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      theme: props.startTheme || 'corp', role: 'gestor', view: 'desktop', screen: 'dashboard',
+      selOs: 106, selCli: 'CLI-01',
+      query: '', filter: 'Todas', cliQuery: '',
+      modo: 'os', qOs: '', osNotFound: false, qCpf: '', cpfDone: false, cpfVal: '',
+      showModal: false, showRecibo: false, toast: null,
+      form: this.emptyForm(),
+      data: this.seed(),
+    };
+    this._t = null;
+  }
+  emptyForm() { return { cpf: '', nome: '', telefone: '', celular: '', tipo: 'Assistência', chip: false, bateria: false, marca: '', modelo: '', defeito: '', valor: '', obs: '' }; }
+
+  seed() {
+    const clientes = [
+      { id: 'CLI-01', cpf: '391.264.098-01', cnpj: '', nome: 'Marcelo Tavares', nasc: '12/05/1988', rg: '34.567.890-1', telefone: '(11) 4384-0516', celular: '(11) 95221-8568', endereco: 'Rua das Flores, 120 - Osasco-SP', email: 'marcelo.tavares@email.com' },
+      { id: 'CLI-02', cpf: '123.456.789-00', cnpj: '', nome: 'Juliana Alves', nasc: '03/09/1995', rg: '40.111.222-3', telefone: '(11) 4002-8922', celular: '(11) 98123-4567', endereco: 'Av. dos Autonomistas, 900 - Osasco-SP', email: 'juliana.alves@email.com' },
+      { id: 'CLI-03', cpf: '', cnpj: '12.345.678/0001-90', nome: 'Auto Cell Comércio LTDA', nasc: '', rg: '', telefone: '(11) 3681-7700', celular: '(11) 97654-3210', endereco: 'Rua Antônio Agu, 250 - Osasco-SP', email: 'contato@autocell.com.br' },
+      { id: 'CLI-04', cpf: '456.789.123-00', cnpj: '', nome: 'Roberto Dias', nasc: '28/11/1979', rg: '22.333.444-5', telefone: '(11) 4191-2020', celular: '(11) 96543-2109', endereco: 'Rua Erasmo Braga, 45 - Carapicuíba-SP', email: 'roberto.dias@email.com' },
+      { id: 'CLI-05', cpf: '654.321.789-00', cnpj: '', nome: 'Camila Rocha', nasc: '17/02/2000', rg: '48.555.666-7', telefone: '(11) 4789-1100', celular: '(11) 95432-1098', endereco: 'Rua Faiçal Nadre, 80 - Osasco-SP', email: 'camila.rocha@email.com' },
+      { id: 'CLI-06', cpf: '789.123.456-00', cnpj: '', nome: 'Anderson Lima', nasc: '05/07/1991', rg: '50.777.888-9', telefone: '(11) 4385-3300', celular: '(11) 94321-0987', endereco: 'Rua João Batista, 12 - Osasco-SP', email: 'anderson.lima@email.com' },
+    ];
+    const os = [
+      { num: 106, cli: 'CLI-01', tipo: 'Assistência', chip: false, bateria: false, marca: 'Samsung', modelo: 'Galaxy A14', defeito: 'Troca de tela', valor: 280, data: '22/06/2026', cod: 'A-106', status: 'Pronto', obs: 'Senha 1234. Cliente deixou capa e película.', hist: [{ evento: 'OS aberta no balcão', data: '22/06/2026 10:12' }, { evento: 'Tela substituída', data: '23/06/2026 14:40' }, { evento: 'Marcada como Pronto', data: '23/06/2026 16:05' }] },
+      { num: 105, cli: 'CLI-01', tipo: 'Assistência', chip: false, bateria: false, marca: 'Motorola', modelo: 'Moto G53', defeito: 'Não carrega — troca de conector', valor: 180, data: '21/06/2026', cod: 'A-105', status: 'Em andamento', obs: 'Aguardando teste de carga após troca do conector.', hist: [{ evento: 'OS aberta', data: '21/06/2026 09:30' }, { evento: 'Em reparo', data: '22/06/2026 11:00' }] },
+      { num: 104, cli: 'CLI-01', tipo: 'Assistência', chip: false, bateria: true, marca: 'Xiaomi', modelo: 'Redmi 12', defeito: 'Troca de bateria', valor: 150, data: '20/06/2026', cod: 'A-104', status: 'Aguardando peça', obs: 'Bateria solicitada ao fornecedor.', hist: [{ evento: 'OS aberta', data: '20/06/2026 15:20' }, { evento: 'Peça solicitada', data: '20/06/2026 17:00' }] },
+      { num: 102, cli: 'CLI-01', tipo: 'Venda', chip: true, bateria: false, marca: 'Vivo', modelo: 'Chip pré-pago', defeito: 'Venda de chip', valor: 30, data: '15/06/2026', cod: 'V-102', status: 'Entregue', obs: '', hist: [{ evento: 'Venda registrada', data: '15/06/2026 13:10' }] },
+      { num: 101, cli: 'CLI-01', tipo: 'Assistência', chip: false, bateria: false, marca: 'Apple', modelo: 'iPhone 11', defeito: 'Não liga — diagnóstico', valor: 1, data: '14/06/2026', cod: 'A-101', status: 'Aberta', obs: 'Aguardando diagnóstico.', hist: [{ evento: 'OS aberta', data: '14/06/2026 18:02' }] },
+      { num: 100, cli: 'CLI-01', tipo: 'Assistência', chip: false, bateria: false, marca: 'Samsung', modelo: 'Galaxy A03', defeito: 'Troca de tela', valor: 1, data: '12/06/2026', cod: 'A-100', status: 'Entregue', obs: '', hist: [{ evento: 'OS aberta', data: '12/06/2026 10:00' }, { evento: 'Entregue ao cliente', data: '13/06/2026 15:30' }] },
+      { num: 99, cli: 'CLI-02', tipo: 'Assistência', chip: false, bateria: false, marca: 'Apple', modelo: 'iPhone 12', defeito: 'Troca de tela (display original)', valor: 690, data: '23/06/2026', cod: 'A-099', status: 'Aberta', obs: 'Cliente pediu peça original.', hist: [{ evento: 'OS aberta', data: '23/06/2026 11:45' }] },
+      { num: 98, cli: 'CLI-04', tipo: 'Assistência', chip: false, bateria: false, marca: 'Motorola', modelo: 'Moto G31', defeito: 'Não carrega', valor: 160, data: '22/06/2026', cod: 'A-098', status: 'Em andamento', obs: '', hist: [{ evento: 'OS aberta', data: '22/06/2026 14:20' }, { evento: 'Em reparo', data: '23/06/2026 09:10' }] },
+      { num: 97, cli: 'CLI-05', tipo: 'Assistência', chip: false, bateria: true, marca: 'Samsung', modelo: 'Galaxy S21', defeito: 'Troca de bateria', valor: 320, data: '21/06/2026', cod: 'A-097', status: 'Pronto', obs: 'Bateria trocada, testada OK.', hist: [{ evento: 'OS aberta', data: '21/06/2026 10:05' }, { evento: 'Marcada como Pronto', data: '22/06/2026 16:40' }] },
+      { num: 96, cli: 'CLI-06', tipo: 'Assistência', chip: false, bateria: false, marca: 'Xiaomi', modelo: 'Redmi Note 11', defeito: 'Troca de tela', valor: 350, data: '18/06/2026', cod: 'A-096', status: 'Entregue', obs: '', hist: [{ evento: 'OS aberta', data: '18/06/2026 09:00' }, { evento: 'Entregue', data: '20/06/2026 11:20' }] },
+      { num: 95, cli: 'CLI-03', tipo: 'Venda', chip: false, bateria: false, marca: 'Diversos', modelo: 'Capas e películas (5un)', defeito: 'Venda de acessórios', valor: 250, data: '17/06/2026', cod: 'V-095', status: 'Entregue', obs: 'Pedido para revenda.', hist: [{ evento: 'Venda registrada', data: '17/06/2026 16:30' }] },
+      { num: 94, cli: 'CLI-02', tipo: 'Venda', chip: true, bateria: false, marca: 'Claro', modelo: 'Chip pós-pago', defeito: 'Venda de chip', valor: 25, data: '16/06/2026', cod: 'V-094', status: 'Entregue', obs: '', hist: [{ evento: 'Venda registrada', data: '16/06/2026 12:00' }] },
+    ];
+    return { clientes, os };
+  }
+
+  // helpers
+  brl(n) { return 'R$ ' + Number(n || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  cli(id) { return this.state.data.clientes.find(c => c.id === id) || { nome: '—', cpf: '', cnpj: '' }; }
+  doc(c) { return c.cnpj ? c.cnpj : c.cpf; }
+  initial(n) { return (n || '?').trim()[0] || '?'; }
+  statusStyle(st) {
+    const m = { 'Aberta': ['#1d4ed8', '#e3edff'], 'Em andamento': ['#b45309', '#fff1d6'], 'Aguardando peça': ['#7c3aed', '#f0e8ff'], 'Pronto': ['#0e7490', '#d5f1f7'], 'Entregue': ['#047857', '#d8f3e6'], 'Cancelada': ['#b91c1c', '#fde2e2'] };
+    const [fg, bg] = m[st] || ['#475569', '#e8edf3'];
+    return `display:inline-flex;align-items:center;font:700 11px 'Plus Jakarta Sans';padding:4px 10px;border-radius:99px;color:${fg};background:${bg};white-space:nowrap`;
+  }
+  tipoStyle(t) {
+    const [fg, bg] = t === 'Venda' ? ['#047857', '#d8f3e6'] : ['#1d4ed8', '#e3edff'];
+    return `display:inline-flex;align-items:center;font:700 10px 'Plus Jakarta Sans';padding:3px 9px;border-radius:99px;color:${fg};background:${bg}`;
+  }
+  themeVars() {
+    const T = {
+      corp: { bg: '#eef2f8', surface: '#ffffff', surface2: '#f4f7fb', text: '#0f1c2e', muted: '#5b6b82', border: '#e4e9f1', primary: '#1565d8', primarysoft: '#e6f0ff', r: '16px', shadow: '0 1px 2px rgba(16,30,54,.05),0 6px 18px -6px rgba(16,30,54,.10)', sidebar: '#0c1a30', sidebarMuted: 'rgba(159,176,199,.75)', topbar: '#ffffff' },
+      vibrante: { bg: '#f3f0fb', surface: '#ffffff', surface2: '#f8f4ff', text: '#1c1340', muted: '#6b5e94', border: '#ece5f8', primary: '#6d28d9', primarysoft: '#f1e9ff', r: '20px', shadow: '0 8px 28px -10px rgba(91,33,182,.22)', sidebar: 'linear-gradient(180deg,#5b21b6,#312e81)', sidebarMuted: 'rgba(203,187,240,.8)', topbar: '#ffffff' },
+      escuro: { bg: '#070d1a', surface: '#0f1729', surface2: '#15203a', text: '#e6edf7', muted: '#8aa0bf', border: '#1f2c47', primary: '#3b82f6', primarysoft: '#16263f', r: '16px', shadow: '0 1px 2px rgba(0,0,0,.5),0 10px 28px -10px rgba(0,0,0,.55)', sidebar: '#0a1120', sidebarMuted: '#7b90b0', topbar: '#0f1729' },
+    };
+    const t = T[this.state.theme] || T.corp;
+    return `--bg:${t.bg};--surface:${t.surface};--surface2:${t.surface2};--text:${t.text};--muted:${t.muted};--border:${t.border};--primary:${t.primary};--primarysoft:${t.primarysoft};--r:${t.r};--shadow:${t.shadow};--sidebar:${t.sidebar};--sidebarMuted:${t.sidebarMuted};--topbar:${t.topbar}`;
+  }
+  toastMsg(m) { this.setState({ toast: m }); clearTimeout(this._t); this._t = setTimeout(() => this.setState({ toast: null }), 2600); }
+
+  renderVals() {
+    const S = this.state;
+    const isMobile = S.view === 'mobile';
+    const go = (screen) => () => this.setState({ screen });
+    const segBtn = (a) => `padding:6px 12px;border:none;border-radius:8px;cursor:pointer;font:700 12px 'Plus Jakarta Sans';background:${a ? 'var(--primary)' : 'transparent'};color:${a ? '#fff' : 'var(--muted)'}`;
+    const iconSeg = (a) => `display:flex;align-items:center;justify-content:center;width:30px;height:26px;border:none;border-radius:8px;cursor:pointer;background:${a ? 'var(--primary)' : 'transparent'};color:${a ? '#fff' : 'var(--muted)'}`;
+    const navStyle = (k) => { const a = S.screen === k || (k === 'ordens' && S.screen === 'osDetail') || (k === 'clientes' && S.screen === 'cliDetail'); return `display:flex;align-items:center;gap:11px;width:100%;padding:11px 12px;border:none;border-radius:11px;cursor:pointer;text-align:left;font:600 13px 'Plus Jakarta Sans';background:${a ? 'rgba(255,255,255,.12)' : 'transparent'};color:${a ? '#fff' : 'var(--sidebarMuted)'}`; };
+    const bnStyle = (k) => { const a = S.screen === k || (k === 'ordens' && S.screen === 'osDetail') || (k === 'clientes' && S.screen === 'cliDetail'); return `display:flex;flex-direction:column;align-items:center;gap:3px;flex:1;padding:6px 2px;border:none;background:none;cursor:pointer;color:${a ? 'var(--primary)' : 'var(--muted)'}`; };
+
+    const heads = {
+      dashboard: ['Visão geral', 'Início', 'Resumo da loja — ordens, vendas e faturamento.'],
+      ordens: ['Operação', 'Ordens de Serviço', 'Todas as OS de assistência e vendas.'],
+      osDetail: ['Ordem de serviço', 'OS ' + S.selOs, 'Detalhes do atendimento.'],
+      clientes: ['Cadastro', 'Clientes', 'Base de clientes IZZI.'],
+      cliDetail: ['Cliente', this.cli(S.selCli).nome, 'Dados e histórico de ordens.'],
+      consultar: ['Localizar', 'Consultar', 'Busca por número de OS ou por CPF — como no Access.'],
+    };
+    const h = heads[S.screen] || heads.dashboard;
+
+    const osVm = (o) => ({ num: String(o.num), cliente: this.cli(o.cli).nome, aparelho: o.marca + ' ' + o.modelo, defeito: o.defeito, tipo: o.tipo, status: o.status, valor: this.brl(o.valor), statusStyle: this.statusStyle(o.status), tipoStyle: this.tipoStyle(o.tipo), open: () => this.setState({ selOs: o.num, screen: 'osDetail' }) });
+
+    // dashboard
+    const abertas = S.data.os.filter(o => ['Aberta', 'Em andamento', 'Aguardando peça'].includes(o.status)).length;
+    const prontosArr = S.data.os.filter(o => o.status === 'Pronto');
+    const fatMes = S.data.os.filter(o => o.status === 'Entregue').reduce((s, o) => s + o.valor, 0);
+    const kpis = [
+      { label: 'OS em aberto', value: String(abertas), delta: 'em atendimento', dot: '#1565d8', good: false },
+      { label: 'Prontas p/ retirar', value: String(prontosArr.length), delta: 'avisar cliente', dot: '#0e7490', good: false },
+      { label: 'Faturamento (entregue)', value: this.brl(fatMes), delta: 'no período', dot: '#0f9d6b', good: true },
+      { label: 'Clientes', value: String(S.data.clientes.length), delta: 'cadastrados', dot: '#7c3aed', good: false },
+    ].map(k => ({ ...k, dotStyle: `width:9px;height:9px;border-radius:50%;background:${k.dot};box-shadow:0 0 0 4px ${k.dot}22`, deltaStyle: `font:600 11.5px 'Plus Jakarta Sans';color:${k.good ? '#0f9d6b' : 'var(--muted)'};margin-top:7px` }));
+    const recentOs = S.data.os.slice(0, 5).map(osVm);
+    const dstatuses = ['Aberta', 'Em andamento', 'Aguardando peça', 'Pronto'];
+    const colorOf = (st) => ({ 'Aberta': '#1565d8', 'Em andamento': '#b45309', 'Aguardando peça': '#7c3aed', 'Pronto': '#0e7490' }[st]);
+    const maxc = Math.max(1, ...dstatuses.map(st => S.data.os.filter(o => o.status === st).length));
+    const statusDist = dstatuses.map(st => { const c = S.data.os.filter(o => o.status === st).length; return { label: st, count: String(c), barStyle: `height:100%;width:${Math.round(c / maxc * 100)}%;background:${colorOf(st)};border-radius:6px` }; });
+    const prontos = prontosArr.map(o => ({ num: String(o.num), cliente: this.cli(o.cli).nome, valor: this.brl(o.valor), open: () => this.setState({ selOs: o.num, screen: 'osDetail' }) }));
+
+    // ordens
+    let list = S.data.os.slice();
+    if (S.filter !== 'Todas') list = list.filter(o => o.status === S.filter);
+    if (S.query.trim()) { const q = S.query.toLowerCase(); list = list.filter(o => String(o.num).includes(q) || (o.marca + ' ' + o.modelo).toLowerCase().includes(q) || o.defeito.toLowerCase().includes(q) || this.cli(o.cli).nome.toLowerCase().includes(q)); }
+    const osList = list.map(osVm);
+    const chipNames = ['Todas', 'Aberta', 'Em andamento', 'Aguardando peça', 'Pronto', 'Entregue'];
+    const filterChips = chipNames.map(n => ({ label: n, onClick: () => this.setState({ filter: n }), style: `padding:8px 14px;border-radius:99px;cursor:pointer;font:700 12px 'Plus Jakarta Sans';border:1px solid ${S.filter === n ? 'var(--primary)' : 'var(--border)'};background:${S.filter === n ? 'var(--primary)' : 'var(--surface)'};color:${S.filter === n ? '#fff' : 'var(--muted)'}` }));
+
+    // os detail
+    const oRaw = S.data.os.find(o => o.num === Number(S.selOs)) || S.data.os[0];
+    const cD = this.cli(oRaw.cli);
+    const order = ['Aberta', 'Em andamento', 'Pronto', 'Entregue'];
+    let curIdx = order.indexOf(oRaw.status); if (oRaw.status === 'Aguardando peça') curIdx = 1;
+    const cancelled = oRaw.status === 'Cancelada';
+    const os = {
+      num: String(oRaw.num), status: oRaw.status, tipo: oRaw.tipo, chip: oRaw.chip, bateria: oRaw.bateria,
+      marca: oRaw.marca, modelo: oRaw.modelo, defeito: oRaw.defeito, obs: oRaw.obs || 'Sem observações.',
+      aparelho: oRaw.marca + ' ' + oRaw.modelo, valor: this.brl(oRaw.valor), data: oRaw.data, cod: oRaw.cod, atendente: oRaw.tipo === 'Venda' ? 'Balcão' : 'Bruna Castro',
+      cliente: cD.nome, doc: this.doc(cD), cliInitial: this.initial(cD.nome), telefone: cD.telefone, celular: cD.celular, email: cD.email || '—', endereco: cD.endereco || '—',
+      statusStyle: this.statusStyle(oRaw.status), tipoStyle: this.tipoStyle(oRaw.tipo),
+      historico: oRaw.hist.slice().reverse(),
+      openCli: () => this.setState({ selCli: oRaw.cli, screen: 'cliDetail' }),
+      steps: order.map((label, i) => { const done = !cancelled && i <= curIdx; const current = !cancelled && i === curIdx; return { label, num: String(i + 1), dotStyle: `width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 13px 'Plus Jakarta Sans';flex-shrink:0;background:${done ? 'var(--primary)' : 'var(--surface2)'};color:${done ? '#fff' : 'var(--muted)'};border:2px solid ${done || current ? 'var(--primary)' : 'var(--border)'}`, lineStyle: `flex:1;height:2px;background:${i < curIdx && !cancelled ? 'var(--primary)' : 'var(--border)'}`, labelStyle: `font:${current ? 700 : 600} 11.5px 'Plus Jakarta Sans';color:${done ? 'var(--text)' : 'var(--muted)'};margin-top:9px` }; }),
+    };
+
+    // clientes
+    let cl = S.data.clientes.slice();
+    if (S.cliQuery.trim()) { const q = S.cliQuery.toLowerCase(); cl = cl.filter(c => c.nome.toLowerCase().includes(q) || this.doc(c).toLowerCase().includes(q)); }
+    const totalOf = (id) => S.data.os.filter(o => o.cli === id).reduce((s, o) => s + o.valor, 0);
+    const cliList = cl.map(c => ({ id: c.id, nome: c.nome, doc: this.doc(c), initial: this.initial(c.nome), osCount: String(S.data.os.filter(o => o.cli === c.id).length), total: this.brl(totalOf(c.id)), open: () => this.setState({ selCli: c.id, screen: 'cliDetail' }) }));
+    const cRaw = this.cli(S.selCli);
+    const cliOs = S.data.os.filter(o => o.cli === S.selCli).map(osVm);
+    const cli = { ...cRaw, doc: this.doc(cRaw), initial: this.initial(cRaw.nome), email: cRaw.email || '—', endereco: cRaw.endereco || '—', nasc: cRaw.nasc || '—', rg: cRaw.rg || '—', os: cliOs, noOs: cliOs.length === 0, total: this.brl(totalOf(S.selCli)) };
+
+    // consultar - cpf
+    let cpfCli = null, cpfOs = [], cpfTotal = 0;
+    if (S.cpfDone && S.cpfVal) { const d = S.cpfVal.replace(/\D/g, ''); const cc = S.data.clientes.find(c => c.cpf && c.cpf.replace(/\D/g, '') === d); if (cc) { cpfCli = { nome: cc.nome, doc: this.doc(cc), initial: this.initial(cc.nome) }; const arr = S.data.os.filter(o => o.cli === cc.id); cpfOs = arr.map(osVm); cpfTotal = arr.reduce((s, o) => s + o.valor, 0); } }
+
+    // form
+    const tipoOptions = ['Assistência', 'Venda'].map(t => ({ label: t, onClick: () => this.setState({ form: { ...S.form, tipo: t } }), style: `padding:9px 14px;border-radius:9px;cursor:pointer;font:700 12px 'Plus Jakarta Sans';border:1px solid ${S.form.tipo === t ? 'var(--primary)' : 'var(--border)'};background:${S.form.tipo === t ? 'var(--primarysoft)' : 'var(--surface2)'};color:${S.form.tipo === t ? 'var(--primary)' : 'var(--muted)'}` }));
+    const toggleStyle = (on) => `padding:9px 14px;border-radius:9px;cursor:pointer;font:700 12px 'Plus Jakarta Sans';border:1px solid ${on ? 'var(--primary)' : 'var(--border)'};background:${on ? 'var(--primarysoft)' : 'var(--surface2)'};color:${on ? 'var(--primary)' : 'var(--muted)'}`;
+    const inp = `width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface2);color:var(--text);font:500 13px 'Plus Jakarta Sans'`;
+    const setF = (k) => (e) => this.setState({ form: { ...this.state.form, [k]: e.target.value } });
+
+    return {
+      rootStyle: `${this.themeVars()};font-family:'Plus Jakarta Sans',system-ui,sans-serif;min-height:100vh;background:${isMobile ? '#e7ebf2' : 'var(--bg)'};${isMobile ? 'display:flex;align-items:center;justify-content:center;padding:24px' : ''}`,
+      appStyle: isMobile ? `position:relative;width:390px;height:780px;max-height:88vh;display:flex;flex-direction:column;overflow:hidden;background:var(--bg);border-radius:34px;border:9px solid #11161f;box-shadow:0 30px 70px -20px rgba(0,0,0,.5)` : `position:relative;display:flex;flex-direction:column;min-height:100vh;background:var(--bg)`,
+      mainPad: isMobile ? 'padding:18px 14px 24px' : 'padding:26px 30px 40px',
+      showSidebar: !isMobile, showBottomNav: isMobile, showDashNav: S.role === 'gestor',
+      tCorp: segBtn(S.theme === 'corp'), tVib: segBtn(S.theme === 'vibrante'), tEsc: segBtn(S.theme === 'escuro'),
+      vDesk: iconSeg(!isMobile), vMob: iconSeg(isMobile),
+      setThemeCorp: () => this.setState({ theme: 'corp' }), setThemeVib: () => this.setState({ theme: 'vibrante' }), setThemeEsc: () => this.setState({ theme: 'escuro' }),
+      setViewDesktop: () => this.setState({ view: 'desktop' }), setViewMobile: () => this.setState({ view: 'mobile' }),
+      toggleRole: () => this.setState({ role: S.role === 'gestor' ? 'atendente' : 'gestor', screen: S.role === 'gestor' && S.screen === 'dashboard' ? 'ordens' : S.screen }),
+      roleName: S.role === 'gestor' ? 'Ana Ribeiro' : 'Bruna Castro', roleLabel: S.role === 'gestor' ? 'Gestor' : 'Atendente', roleInitial: S.role === 'gestor' ? 'A' : 'B',
+      avatarStyle: `width:30px;height:30px;border-radius:9px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font:800 13px 'Plus Jakarta Sans';flex-shrink:0`,
+      navDashS: navStyle('dashboard'), navOrdS: navStyle('ordens'), navCliS: navStyle('clientes'), navConsS: navStyle('consultar'),
+      bnDash: bnStyle('dashboard'), bnOrd: bnStyle('ordens'), bnCli: bnStyle('clientes'), bnCons: bnStyle('consultar'),
+      goDash: go('dashboard'), goOrd: go('ordens'), goCli: go('clientes'), goConsulta: go('consultar'),
+      screenEyebrow: h[0], screenTitle: h[1], screenSubtitle: h[2],
+      isDash: S.screen === 'dashboard', isOrd: S.screen === 'ordens', isOsDetail: S.screen === 'osDetail', isCli: S.screen === 'clientes', isCliDetail: S.screen === 'cliDetail', isConsulta: S.screen === 'consultar',
+      kpis, recentOs, statusDist, prontos, noProntos: prontos.length === 0,
+      query: S.query, onQuery: (e) => this.setState({ query: e.target.value }), filterChips, osList, osEmpty: osList.length === 0,
+      openNova: () => this.setState({ showModal: true, form: this.emptyForm() }),
+      os, tagStyle: `display:inline-flex;align-items:center;font:700 10px 'Plus Jakarta Sans';padding:3px 9px;border-radius:99px;color:var(--muted);background:var(--surface2);border:1px solid var(--border)`,
+      advanceStatus: () => this.advance(oRaw.num), cancelOs: () => { this.updateOs(oRaw.num, 'Cancelada'); this.toastMsg('OS ' + oRaw.num + ' cancelada'); },
+      openRecibo: () => this.setState({ showRecibo: true }), closeRecibo: () => this.setState({ showRecibo: false }), showRecibo: S.showRecibo, printRecibo: () => { this.toastMsg('Recibo enviado para impressão'); this.setState({ showRecibo: false }); },
+      cliQuery: S.cliQuery, onCliQuery: (e) => this.setState({ cliQuery: e.target.value }), cliList, cli,
+      // consultar
+      modo: S.modo, modoOs: S.modo === 'os', modoCpf: S.modo === 'cpf',
+      setModoOs: () => this.setState({ modo: 'os' }), setModoCpf: () => this.setState({ modo: 'cpf' }),
+      modoOsStyle: `padding:8px 16px;border:none;border-radius:9px;cursor:pointer;font:700 12.5px 'Plus Jakarta Sans';background:${S.modo === 'os' ? 'var(--primary)' : 'transparent'};color:${S.modo === 'os' ? '#fff' : 'var(--muted)'}`,
+      modoCpfStyle: `padding:8px 16px;border:none;border-radius:9px;cursor:pointer;font:700 12.5px 'Plus Jakarta Sans';background:${S.modo === 'cpf' ? 'var(--primary)' : 'transparent'};color:${S.modo === 'cpf' ? '#fff' : 'var(--muted)'}`,
+      qOs: S.qOs, onQOs: (e) => this.setState({ qOs: e.target.value, osNotFound: false }), onQOsKey: (e) => { if (e.key === 'Enter') this.buscaOs(); }, buscaOs: () => this.buscaOs(), osNotFound: S.osNotFound,
+      qCpf: S.qCpf, onQCpf: (e) => this.setState({ qCpf: e.target.value }), onQCpfKey: (e) => { if (e.key === 'Enter') this.buscaCpf(); }, buscaCpf: () => this.setState({ cpfDone: true, cpfVal: S.qCpf }),
+      cpfDone: S.cpfDone, cpfFound: !!cpfCli, cpfEmpty: S.cpfDone && !cpfCli, cpfCli: cpfCli || {}, cpfOs, cpfTotal: this.brl(cpfTotal),
+      // modal form
+      showModal: S.showModal, closeModal: () => this.setState({ showModal: false }), stop: (e) => e.stopPropagation(),
+      form: S.form, inp, tipoOptions,
+      toggleChip: () => this.setState({ form: { ...S.form, chip: !S.form.chip } }), toggleBateria: () => this.setState({ form: { ...S.form, bateria: !S.form.bateria } }),
+      chipBtn: toggleStyle(S.form.chip), bateriaBtn: toggleStyle(S.form.bateria),
+      onF_cpf: setF('cpf'), onF_nome: setF('nome'), onF_tel: setF('telefone'), onF_cel: setF('celular'), onF_marca: setF('marca'), onF_modelo: setF('modelo'), onF_defeito: setF('defeito'), onF_valor: setF('valor'), onF_obs: setF('obs'),
+      limparForm: () => this.setState({ form: this.emptyForm() }), submitNova: () => this.submitNova(),
+      showToast: !!S.toast, toast: S.toast,
+    };
+  }
+
+  updateOs(num, status) { this.setState(s => ({ data: { ...s.data, os: s.data.os.map(o => o.num === num ? { ...o, status, hist: [...o.hist, { evento: 'Status: ' + status, data: 'agora' }] } : o) } })); }
+  advance(num) { const order = ['Aberta', 'Em andamento', 'Pronto', 'Entregue']; const o = this.state.data.os.find(x => x.num === num); if (!o) return; let next; if (o.status === 'Aguardando peça') next = 'Pronto'; else { const i = order.indexOf(o.status); if (i < 0 || i >= order.length - 1) { this.toastMsg('OS já entregue'); return; } next = order[i + 1]; } this.updateOs(num, next); this.toastMsg('OS ' + num + ' → ' + next); }
+  submitNova() {
+    const f = this.state.form;
+    if (!f.nome.trim()) { this.toastMsg('Informe o nome do cliente'); return; }
+    if (!f.marca.trim() && !f.defeito.trim()) { this.toastMsg('Informe aparelho ou item'); return; }
+    let cliId = this.state.data.clientes.find(c => f.cpf && c.cpf === f.cpf)?.id;
+    let clientes = this.state.data.clientes;
+    if (!cliId) { cliId = 'CLI-' + String(clientes.length + 1).padStart(2, '0'); clientes = [{ id: cliId, cpf: f.cpf, cnpj: '', nome: f.nome, nasc: '', rg: '', telefone: f.telefone, celular: f.celular, endereco: '', email: '' }, ...clientes]; }
+    const num = Math.max(...this.state.data.os.map(o => o.num)) + 1;
+    const valor = parseFloat(String(f.valor).replace(/\./g, '').replace(',', '.')) || 0;
+    const novo = { num, cli: cliId, tipo: f.tipo, chip: f.chip, bateria: f.bateria, marca: f.marca || '—', modelo: f.modelo || '', defeito: f.defeito || (f.tipo === 'Venda' ? 'Venda' : 'Diagnóstico'), valor, data: 'hoje', cod: (f.tipo === 'Venda' ? 'V-' : 'A-') + num, status: 'Aberta', obs: f.obs, hist: [{ evento: 'OS aberta', data: 'agora' }] };
+    this.setState(s => ({ data: { clientes, os: [novo, ...s.data.os] }, showModal: false, selOs: num, screen: 'osDetail' }));
+    this.toastMsg('OS ' + num + ' salva com sucesso');
+  }
+  buscaOs() { const n = Number(String(this.state.qOs).replace(/\D/g, '')); const o = this.state.data.os.find(x => x.num === n); if (o) this.setState({ selOs: o.num, screen: 'osDetail', osNotFound: false }); else this.setState({ osNotFound: true }); }
+}
+</script>
+
+
+</body></html>

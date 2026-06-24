@@ -1,0 +1,26 @@
+.group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 4px;
+  border-radius: 11px;
+}
+
+.group button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  font: 700 12px var(--font-ui);
+}
+
+.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.inactive {
+  background: transparent;
+  color: var(--muted);
+}

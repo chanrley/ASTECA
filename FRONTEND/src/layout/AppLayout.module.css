@@ -1,0 +1,44 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  background: var(--bg);
+}
+
+.mainPad {
+  padding: 26px 30px 40px;
+}
+
+@media (max-width: 860px) {
+  .mainPad {
+    padding: 18px 14px 24px;
+  }
+}
+
+.modalOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  background: rgba(8, 15, 30, 0.55);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+  backdrop-filter: blur(2px);
+}

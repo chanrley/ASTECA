@@ -1,0 +1,244 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font: 700 10px var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #0f9d6b;
+  background: #d8f3e6;
+  padding: 3px 9px;
+  border-radius: 99px;
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.badgeNote {
+  font: 500 12px var(--font-ui);
+  color: var(--muted);
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.kpiCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.kpiTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.kpiLabel {
+  font: 600 12px var(--font-ui);
+  color: var(--muted);
+}
+
+.kpiDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.kpiValue {
+  font: 800 27px var(--font-ui);
+  color: var(--text);
+  letter-spacing: -1px;
+}
+
+.kpiDelta {
+  font: 600 11.5px var(--font-ui);
+  margin-top: 7px;
+}
+
+.kpiDeltaGood {
+  color: #0f9d6b;
+}
+
+.kpiDeltaMuted {
+  color: var(--muted);
+}
+
+.columns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.recentCard {
+  flex: 2 1 360px;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.recentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cardTitle {
+  font: 700 14px var(--font-ui);
+  color: var(--text);
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font: 700 12px var(--font-ui);
+}
+
+.recentRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+  text-align: left;
+  background: none;
+}
+
+.recentNum {
+  font: 700 13px var(--font-mono);
+  color: var(--primary);
+  width: 52px;
+  flex-shrink: 0;
+}
+
+.recentInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.recentCliente {
+  font: 700 13px var(--font-ui);
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recentAparelho {
+  font: 500 11.5px var(--font-ui);
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recentValor {
+  font: 700 13px var(--font-mono);
+  color: var(--text);
+  width: 92px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.sideCol {
+  flex: 1 1 250px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sideCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.statusBarItem {
+  margin-bottom: 13px;
+}
+
+.statusBarTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.statusBarLabel {
+  font: 600 12px var(--font-ui);
+  color: var(--muted);
+}
+
+.statusBarCount {
+  font: 700 12px var(--font-ui);
+  color: var(--text);
+}
+
+.statusBarTrack {
+  height: 7px;
+  border-radius: 6px;
+  background: var(--surface2);
+  overflow: hidden;
+}
+
+.statusBarFill {
+  height: 100%;
+  border-radius: 6px;
+}
+
+.prontosNote {
+  font: 500 11.5px var(--font-ui);
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.prontoRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  text-align: left;
+  background: none;
+}
+
+.prontoNum {
+  font: 700 12px var(--font-mono);
+  color: var(--primary);
+}
+
+.prontoCliente {
+  flex: 1;
+  min-width: 0;
+  font: 600 12px var(--font-ui);
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prontoValor {
+  font: 700 12px var(--font-mono);
+  color: var(--text);
+}

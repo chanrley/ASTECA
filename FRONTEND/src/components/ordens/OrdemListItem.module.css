@@ -1,0 +1,63 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 14px;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+
+.numRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.num {
+  font: 700 13px var(--font-mono);
+  color: var(--primary);
+}
+
+.cliente {
+  font: 700 14px var(--font-ui);
+  color: var(--text);
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.colLabel {
+  font: 600 10px var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+}
+
+.colValue {
+  font: 600 13px var(--font-ui);
+  color: var(--text);
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.statusCol {
+  margin-bottom: 5px;
+}
+
+.valorCol {
+  text-align: right;
+}
+
+.valor {
+  font: 700 15px var(--font-mono);
+  color: var(--text);
+  margin-top: 4px;
+}

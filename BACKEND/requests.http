@@ -1,0 +1,105 @@
+### Coleção de testes manuais da API ASTECA (REST Client - VS Code)
+### Rode a API localmente antes (dotnet run, ASPNETCORE_ENVIRONMENT=Development) e ajuste @baseUrl se necessário.
+### Todos os fluxos abaixo já foram validados manualmente durante o desenvolvimento.
+
+@baseUrl = http://localhost:5080
+
+### 1. Login com credenciais válidas — espera 200 + cookie asteca_token
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "nomeUsuario": "gestor",
+  "senha": "Izzi@2026"
+}
+
+### 2. Login com senha errada — espera 401
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "nomeUsuario": "gestor",
+  "senha": "errada"
+}
+
+### 3. /me com cookie da requisição 1 (REST Client reaproveita cookies da mesma sessão)
+GET {{baseUrl}}/api/auth/me
+
+### 4. Dashboard (requer papel Gestor) — espera 200 com osEmAberto/prontasParaRetirada/faturamentoTotal/totalClientes
+GET {{baseUrl}}/api/dashboard
+
+### 5. Listar clientes com busca textual
+GET {{baseUrl}}/api/clientes?busca=Marcelo
+
+### 6. Buscar cliente por CPF (normaliza pontuação dos dois lados)
+GET {{baseUrl}}/api/clientes/buscar-cpf?cpf=391.264.098-01
+
+### 7. Buscar cliente por CPF inexistente — espera 404
+GET {{baseUrl}}/api/clientes/buscar-cpf?cpf=000.000.000-00
+
+### 8. Buscar OS por número
+GET {{baseUrl}}/api/ordens/numero/106
+
+### 9. Listar ordens filtrando por status
+GET {{baseUrl}}/api/ordens?status=Aberta,EmAndamento
+
+### 10. Criar OS reusando cliente existente pelo CPF — espera 201, mesmo clienteId de Marcelo Tavares (id 1)
+POST {{baseUrl}}/api/ordens
+Content-Type: application/json
+
+{
+  "cliente": { "cpf": "391.264.098-01", "cnpj": null, "nome": "Marcelo Tavares", "telefone": null, "celular": null, "endereco": null, "email": null, "dataNascimento": null, "rg": null },
+  "tipo": "Assistencia", "chip": false, "bateria": false,
+  "marca": "Samsung", "modelo": "Galaxy S23", "defeito": "Tela quebrada", "valor": 300, "observacoes": null
+}
+
+### 11. Criar OS com cliente novo (CPF não cadastrado) — espera 201, cria cliente novo
+POST {{baseUrl}}/api/ordens
+Content-Type: application/json
+
+{
+  "cliente": { "cpf": "111.222.333-44", "cnpj": null, "nome": "Cliente Teste Novo", "telefone": "(11) 9999-0000", "celular": null, "endereco": null, "email": null, "dataNascimento": null, "rg": null },
+  "tipo": "Venda", "chip": true, "bateria": false,
+  "marca": "Chip", "modelo": "", "defeito": "Venda de chip", "valor": 25, "observacoes": null
+}
+
+### 12. Criar OS sem nome do cliente — espera 400 "Informe o nome do cliente."
+POST {{baseUrl}}/api/ordens
+Content-Type: application/json
+
+{
+  "cliente": { "cpf": null, "cnpj": null, "nome": "", "telefone": null, "celular": null, "endereco": null, "email": null, "dataNascimento": null, "rg": null },
+  "tipo": "Assistencia", "chip": false, "bateria": false,
+  "marca": "Samsung", "modelo": "", "defeito": "", "valor": 0, "observacoes": null
+}
+
+### 13. Avançar status de uma OS Aberta → EmAndamento (troque {id} por um Id real retornado acima)
+PATCH {{baseUrl}}/api/ordens/5/avancar
+
+### 14. Avançar status de uma OS já Entregue — espera 400 "Não é possível avançar a partir do status 'Entregue'."
+PATCH {{baseUrl}}/api/ordens/4/avancar
+
+### 15. Marcar "Aguardando peça" numa OS Aberta/EmAndamento
+PATCH {{baseUrl}}/api/ordens/13/aguardar-peca
+
+### 16. Cancelar uma OS
+PATCH {{baseUrl}}/api/ordens/5/cancelar
+
+### 17. Cancelar uma OS já cancelada — espera 400 "Esta OS já está cancelada."
+PATCH {{baseUrl}}/api/ordens/5/cancelar
+
+### 18. Login como atendente
+# @name loginAtendente
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "nomeUsuario": "atendente",
+  "senha": "Izzi@2026"
+}
+
+### 19. Atendente acessando o dashboard — espera 403 (rota exige papel Gestor)
+GET {{baseUrl}}/api/dashboard
+
+### 20. Atendente acessando ordens normalmente — espera 200 (sem restrição de papel)
+GET {{baseUrl}}/api/ordens

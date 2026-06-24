@@ -1,0 +1,69 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  padding: 20px 22px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1;
+  min-width: 110px;
+}
+
+.dotRow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 800 13px var(--font-ui);
+  flex-shrink: 0;
+  background: var(--surface2);
+  color: var(--muted);
+  border: 2px solid var(--border);
+}
+
+.dot.done {
+  background: var(--primary);
+  color: #fff;
+}
+
+.dot.current {
+  border-color: var(--primary);
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background: var(--border);
+}
+
+.line.done {
+  background: var(--primary);
+}
+
+.label {
+  font: 600 11.5px var(--font-ui);
+  color: var(--muted);
+  margin-top: 9px;
+}
+
+.label.done {
+  color: var(--text);
+}
+
+.label.current {
+  font-weight: 700;
+}

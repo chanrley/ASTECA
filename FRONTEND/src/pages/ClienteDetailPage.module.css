@@ -1,0 +1,144 @@
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font: 600 13px var(--font-ui);
+  margin-bottom: 14px;
+}
+
+.layout {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.profileCard {
+  flex: 1 1 250px;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  height: fit-content;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: var(--primarysoft);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 800 24px var(--font-ui);
+  margin-bottom: 14px;
+}
+
+.nome {
+  font: 800 18px var(--font-ui);
+  color: var(--text);
+}
+
+.doc {
+  font: 500 13px var(--font-mono);
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.fields {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fieldLabel {
+  font: 600 10px var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+
+.fieldValue {
+  font: 600 13px var(--font-ui);
+  color: var(--text);
+  word-break: break-word;
+}
+
+.fieldsRow {
+  display: flex;
+  gap: 18px;
+}
+
+.ordersCard {
+  flex: 2 1 340px;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.ordersHeader {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ordersTitle {
+  font: 700 14px var(--font-ui);
+  color: var(--text);
+}
+
+.ordersTotal {
+  font: 700 12px var(--font-mono);
+  color: var(--muted);
+}
+
+.orderRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+  text-align: left;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.orderNum {
+  font: 700 12px var(--font-mono);
+  color: var(--primary);
+  width: 48px;
+  flex-shrink: 0;
+}
+
+.orderAparelho {
+  flex: 1;
+  min-width: 0;
+  font: 600 13px var(--font-ui);
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.orderValor {
+  font: 700 13px var(--font-mono);
+  color: var(--text);
+  width: 88px;
+  text-align: right;
+  flex-shrink: 0;
+}

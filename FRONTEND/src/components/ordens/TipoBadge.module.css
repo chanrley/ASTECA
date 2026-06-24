@@ -1,0 +1,17 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font: 700 10px var(--font-ui);
+  padding: 3px 9px;
+  border-radius: 99px;
+}
+
+.Venda {
+  color: var(--tipo-venda-fg);
+  background: var(--tipo-venda-bg);
+}
+
+.Assistencia {
+  color: var(--tipo-assistencia-fg);
+  background: var(--tipo-assistencia-bg);
+}

@@ -1,0 +1,33 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font: 700 11px var(--font-ui);
+  padding: 4px 10px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+.Aberta {
+  color: var(--status-aberta-fg);
+  background: var(--status-aberta-bg);
+}
+.EmAndamento {
+  color: var(--status-andamento-fg);
+  background: var(--status-andamento-bg);
+}
+.AguardandoPeca {
+  color: var(--status-aguardando-fg);
+  background: var(--status-aguardando-bg);
+}
+.Pronto {
+  color: var(--status-pronto-fg);
+  background: var(--status-pronto-bg);
+}
+.Entregue {
+  color: var(--status-entregue-fg);
+  background: var(--status-entregue-bg);
+}
+.Cancelada {
+  color: var(--status-cancelada-fg);
+  background: var(--status-cancelada-bg);
+}

@@ -1,0 +1,60 @@
+{
+  "usuarios": [
+    { "nomeUsuario": "gestor", "senha": "Izzi@2026", "papel": "Gestor", "nomeExibicao": "Gestor IZZI" },
+    { "nomeUsuario": "atendente", "senha": "Izzi@2026", "papel": "Atendente", "nomeExibicao": "Atendente IZZI" }
+  ],
+  "clientes": [
+    { "ref": "CLI-01", "cpf": "391.264.098-01", "cnpj": null, "nome": "Marcelo Tavares", "dataNascimento": "1988-05-12", "rg": "34.567.890-1", "telefone": "(11) 4384-0516", "celular": "(11) 95221-8568", "endereco": "Rua das Flores, 120 - Osasco-SP", "email": "marcelo.tavares@email.com" },
+    { "ref": "CLI-02", "cpf": "123.456.789-00", "cnpj": null, "nome": "Juliana Alves", "dataNascimento": "1995-09-03", "rg": "40.111.222-3", "telefone": "(11) 4002-8922", "celular": "(11) 98123-4567", "endereco": "Av. dos Autonomistas, 900 - Osasco-SP", "email": "juliana.alves@email.com" },
+    { "ref": "CLI-03", "cpf": null, "cnpj": "12.345.678/0001-90", "nome": "Auto Cell Comércio LTDA", "dataNascimento": null, "rg": null, "telefone": "(11) 3681-7700", "celular": "(11) 97654-3210", "endereco": "Rua Antônio Agu, 250 - Osasco-SP", "email": "contato@autocell.com.br" },
+    { "ref": "CLI-04", "cpf": "456.789.123-00", "cnpj": null, "nome": "Roberto Dias", "dataNascimento": "1979-11-28", "rg": "22.333.444-5", "telefone": "(11) 4191-2020", "celular": "(11) 96543-2109", "endereco": "Rua Erasmo Braga, 45 - Carapicuíba-SP", "email": "roberto.dias@email.com" },
+    { "ref": "CLI-05", "cpf": "654.321.789-00", "cnpj": null, "nome": "Camila Rocha", "dataNascimento": "2000-02-17", "rg": "48.555.666-7", "telefone": "(11) 4789-1100", "celular": "(11) 95432-1098", "endereco": "Rua Faiçal Nadre, 80 - Osasco-SP", "email": "camila.rocha@email.com" },
+    { "ref": "CLI-06", "cpf": "789.123.456-00", "cnpj": null, "nome": "Anderson Lima", "dataNascimento": "1991-07-05", "rg": "50.777.888-9", "telefone": "(11) 4385-3300", "celular": "(11) 94321-0987", "endereco": "Rua João Batista, 12 - Osasco-SP", "email": "anderson.lima@email.com" }
+  ],
+  "ordensServico": [
+    { "numero": 106, "codigo": "A-106", "clienteRef": "CLI-01", "tipo": "Assistencia", "chip": false, "bateria": false, "marca": "Samsung", "modelo": "Galaxy A14", "defeito": "Troca de tela", "valor": 280.00, "dataAbertura": "2026-06-22", "status": "Pronto", "observacoes": "Senha 1234. Cliente deixou capa e película.", "historico": [
+      { "evento": "OS aberta no balcão", "dataHora": "2026-06-22T10:12:00" },
+      { "evento": "Tela substituída", "dataHora": "2026-06-23T14:40:00" },
+      { "evento": "Marcada como Pronto", "dataHora": "2026-06-23T16:05:00" }
+    ] },
+    { "numero": 105, "codigo": "A-105", "clienteRef": "CLI-01", "tipo": "Assistencia", "chip": false, "bateria": false, "marca": "Motorola", "modelo": "Moto G53", "defeito": "Não carrega — troca de conector", "valor": 180.00, "dataAbertura": "2026-06-21", "status": "EmAndamento", "observacoes": "Aguardando teste de carga após troca do conector.", "historico": [
+      { "evento": "OS aberta", "dataHora": "2026-06-21T09:30:00" },
+      { "evento": "Em reparo", "dataHora": "2026-06-22T11:00:00" }
+    ] },
+    { "numero": 104, "codigo": "A-104", "clienteRef": "CLI-01", "tipo": "Assistencia", "chip": false, "bateria": true, "marca": "Xiaomi", "modelo": "Redmi 12", "defeito": "Troca de bateria", "valor": 150.00, "dataAbertura": "2026-06-20", "status": "AguardandoPeca", "observacoes": "Bateria solicitada ao fornecedor.", "historico": [
+      { "evento": "OS aberta", "dataHora": "2026-06-20T15:20:00" },
+      { "evento": "Peça solicitada", "dataHora": "2026-06-20T17:00:00" }
+    ] },
+    { "numero": 102, "codigo": "V-102", "clienteRef": "CLI-01", "tipo": "Venda", "chip": true, "bateria": false, "marca": "Vivo", "modelo": "Chip pré-pago", "defeito": "Venda de chip", "valor": 30.00, "dataAbertura": "2026-06-15", "status": "Entregue", "observacoes": null, "historico": [
+      { "evento": "Venda registrada", "dataHora": "2026-06-15T13:10:00" }
+    ] },
+    { "numero": 101, "codigo": "A-101", "clienteRef": "CLI-01", "tipo": "Assistencia", "chip": false, "bateria": false, "marca": "Apple", "modelo": "iPhone 11", "defeito": "Não liga — diagnóstico", "valor": 1.00, "dataAbertura": "2026-06-14", "status": "Aberta", "observacoes": "Aguardando diagnóstico.", "historico": [
+      { "evento": "OS aberta", "dataHora": "2026-06-14T18:02:00" }
+    ] },
+    { "numero": 100, "codigo": "A-100", "clienteRef": "CLI-01", "tipo": "Assistencia", "chip": false, "bateria": false, "marca": "Samsung", "modelo": "Galaxy A03", "defeito": "Troca de tela", "valor": 1.00, "dataAbertura": "2026-06-12", "status": "Entregue", "observacoes": null, "historico": [
+      { "evento": "OS aberta", "dataHora": "2026-06-12T10:00:00" },
+      { "evento": "Entregue ao cliente", "dataHora": "2026-06-13T15:30:00" }
+    ] },
+    { "numero": 99, "codigo": "A-099", "clienteRef": "CLI-02", "tipo": "Assistencia", "chip": false, "bateria": false, "marca": "Apple", "modelo": "iPhone 12", "defeito": "Troca de tela (display original)", "valor": 690.00, "dataAbertura": "2026-06-23", "status": "Aberta", "observacoes": "Cliente pediu peça original.", "historico": [
+      { "evento": "OS aberta", "dataHora": "2026-06-23T11:45:00" }
+    ] },
+    { "numero": 98, "codigo": "A-098", "clienteRef": "CLI-04", "tipo": "Assistencia", "chip": false, "bateria": false, "marca": "Motorola", "modelo": "Moto G31", "defeito": "Não carrega", "valor": 160.00, "dataAbertura": "2026-06-22", "status": "EmAndamento", "observacoes": null, "historico": [
+      { "evento": "OS aberta", "dataHora": "2026-06-22T14:20:00" },
+      { "evento": "Em reparo", "dataHora": "2026-06-23T09:10:00" }
+    ] },
+    { "numero": 97, "codigo": "A-097", "clienteRef": "CLI-05", "tipo": "Assistencia", "chip": false, "bateria": true, "marca": "Samsung", "modelo": "Galaxy S21", "defeito": "Troca de bateria", "valor": 320.00, "dataAbertura": "2026-06-21", "status": "Pronto", "observacoes": "Bateria trocada, testada OK.", "historico": [
+      { "evento": "OS aberta", "dataHora": "2026-06-21T10:05:00" },
+      { "evento": "Marcada como Pronto", "dataHora": "2026-06-22T16:40:00" }
+    ] },
+    { "numero": 96, "codigo": "A-096", "clienteRef": "CLI-06", "tipo": "Assistencia", "chip": false, "bateria": false, "marca": "Xiaomi", "modelo": "Redmi Note 11", "defeito": "Troca de tela", "valor": 350.00, "dataAbertura": "2026-06-18", "status": "Entregue", "observacoes": null, "historico": [
+      { "evento": "OS aberta", "dataHora": "2026-06-18T09:00:00" },
+      { "evento": "Entregue", "dataHora": "2026-06-20T11:20:00" }
+    ] },
+    { "numero": 95, "codigo": "V-095", "clienteRef": "CLI-03", "tipo": "Venda", "chip": false, "bateria": false, "marca": "Diversos", "modelo": "Capas e películas (5un)", "defeito": "Venda de acessórios", "valor": 250.00, "dataAbertura": "2026-06-17", "status": "Entregue", "observacoes": "Pedido para revenda.", "historico": [
+      { "evento": "Venda registrada", "dataHora": "2026-06-17T16:30:00" }
+    ] },
+    { "numero": 94, "codigo": "V-094", "clienteRef": "CLI-02", "tipo": "Venda", "chip": true, "bateria": false, "marca": "Claro", "modelo": "Chip pós-pago", "defeito": "Venda de chip", "valor": 25.00, "dataAbertura": "2026-06-16", "status": "Entregue", "observacoes": null, "historico": [
+      { "evento": "Venda registrada", "dataHora": "2026-06-16T12:00:00" }
+    ] }
+  ]
+}

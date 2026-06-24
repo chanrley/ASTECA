@@ -1,0 +1,210 @@
+.tabs {
+  display: flex;
+  gap: 6px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 5px;
+  border-radius: 13px;
+  width: fit-content;
+  margin-bottom: 18px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9px;
+  font: 700 12.5px var(--font-ui);
+  background: transparent;
+  color: var(--muted);
+}
+
+.tab.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  max-width: 520px;
+}
+
+.panelWide {
+  max-width: 560px;
+}
+
+.panelTitle {
+  font: 700 15px var(--font-ui);
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.panelSubtitle {
+  font: 500 12.5px var(--font-ui);
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.searchRow {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 13px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface2);
+  color: var(--text);
+  font: 600 14px var(--font-mono);
+}
+
+.btnPrimary {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 12px;
+  background: var(--primary);
+  color: #fff;
+  font: 700 14px var(--font-ui);
+}
+
+.errorText {
+  margin-top: 14px;
+  font: 600 13px var(--font-ui);
+  color: #c43b3b;
+}
+
+.resultCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.resultHeader {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.resultAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--primarysoft);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 800 14px var(--font-ui);
+}
+
+.resultNome {
+  font: 700 14px var(--font-ui);
+  color: var(--text);
+}
+
+.resultDoc {
+  font: 500 11.5px var(--font-mono);
+  color: var(--muted);
+}
+
+.tableHeader {
+  display: flex;
+  padding: 9px 18px;
+  background: var(--surface2);
+  font: 700 10px var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+}
+
+.tableHeaderOs {
+  width: 70px;
+}
+
+.tableHeaderAparelho {
+  flex: 1;
+}
+
+.tableHeaderValor {
+  width: 90px;
+  text-align: right;
+}
+
+.tableRow {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  text-align: left;
+  background: none;
+  border-left: none;
+  border-right: none;
+}
+
+.tableRowOs {
+  width: 70px;
+  font: 700 13px var(--font-mono);
+  color: var(--primary);
+}
+
+.tableRowAparelho {
+  flex: 1;
+  min-width: 0;
+}
+
+.tableRowAparelhoNome {
+  font: 600 13px var(--font-ui);
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tableRowValor {
+  width: 90px;
+  text-align: right;
+  font: 700 13px var(--font-mono);
+  color: var(--text);
+}
+
+.totalRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px;
+  border-top: 2px solid var(--border);
+  background: var(--surface2);
+}
+
+.totalLabel {
+  font: 700 13px var(--font-ui);
+  color: var(--text);
+}
+
+.totalValue {
+  font: 800 18px var(--font-mono);
+  color: var(--primary);
+}
+
+.emptyResult {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  padding: 40px;
+  text-align: center;
+  color: var(--muted);
+  font: 500 14px var(--font-ui);
+  margin-top: 16px;
+}

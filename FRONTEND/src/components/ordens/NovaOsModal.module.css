@@ -1,0 +1,164 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  background: rgba(8, 15, 30, 0.55);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+  backdrop-filter: blur(2px);
+}
+
+.dialog {
+  width: 100%;
+  max-width: 560px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 24px 70px -20px rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
+
+.header {
+  padding: 20px 22px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font: 800 17px var(--font-ui);
+  color: var(--text);
+}
+
+.subtitle {
+  font: 500 12px var(--font-ui);
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.closeButton {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 9px;
+  background: var(--surface2);
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.body {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sectionLabel {
+  font: 700 11px var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--primary);
+  margin-bottom: 11px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 11px;
+}
+
+.field label {
+  display: block;
+  font: 700 11px var(--font-ui);
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface2);
+  color: var(--text);
+  font: 500 13px var(--font-ui);
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface2);
+  color: var(--text);
+  font: 500 13px var(--font-ui);
+  resize: vertical;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.toggleGroup {
+  display: flex;
+  gap: 7px;
+}
+
+.toggleButton {
+  padding: 9px 14px;
+  border-radius: 9px;
+  font: 700 12px var(--font-ui);
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--muted);
+}
+
+.toggleButton.on {
+  border-color: var(--primary);
+  background: var(--primarysoft);
+  color: var(--primary);
+}
+
+.vDivider {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+}
+
+.footer {
+  padding: 16px 22px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btnSecondary {
+  padding: 11px 18px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: var(--surface2);
+  color: var(--muted);
+  font: 700 13px var(--font-ui);
+}
+
+.btnPrimary {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 11px;
+  background: var(--primary);
+  color: #fff;
+  font: 700 13px var(--font-ui);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

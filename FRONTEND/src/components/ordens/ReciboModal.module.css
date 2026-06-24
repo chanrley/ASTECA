@@ -1,0 +1,160 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  background: rgba(8, 15, 30, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+}
+
+.dialog {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 24px 70px -20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  color: #111;
+}
+
+.header {
+  padding: 20px 22px;
+  border-bottom: 1px dashed #d0d0d0;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1565d8, #0b3aa0);
+}
+
+.logo span {
+  font: 800 16px var(--font-ui);
+  color: #fff;
+  font-style: italic;
+}
+
+.brandTitle {
+  font: 800 13px var(--font-ui);
+  color: #111;
+}
+
+.brandSubtitle {
+  font: 500 10px var(--font-ui);
+  color: #777;
+}
+
+.body {
+  padding: 20px 22px;
+}
+
+.eyebrow {
+  text-align: center;
+  font: 700 12px var(--font-ui);
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font: 500 12.5px var(--font-ui);
+  color: #333;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rowLabel {
+  color: #888;
+}
+
+.rowValue {
+  font-weight: 700;
+  color: #111;
+}
+
+.rowValueMono {
+  font-family: var(--font-mono);
+  color: #111;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px dashed #d0d0d0;
+}
+
+.totalLabel {
+  font: 700 14px var(--font-ui);
+  color: #111;
+}
+
+.totalValue {
+  font: 800 22px var(--font-mono);
+  color: #1565d8;
+}
+
+.garantia {
+  margin-top: 18px;
+  text-align: center;
+  font: 500 10px var(--font-ui);
+  color: #999;
+  line-height: 1.6;
+}
+
+.footer {
+  padding: 14px 22px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btnSecondary {
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f5f5f5;
+  color: #555;
+  font: 700 12.5px var(--font-ui);
+}
+
+.btnPrimary {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #1565d8;
+  color: #fff;
+  font: 700 12.5px var(--font-ui);
+}
+
+@media print {
+  .overlay {
+    position: fixed;
+    background: #fff;
+    backdrop-filter: none;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .footer {
+    display: none;
+  }
+}

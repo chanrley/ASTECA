@@ -1,0 +1,70 @@
+/* Paletas extraídas literalmente de themeVars() no protótipo original. */
+
+:root,
+[data-theme='corp'] {
+  --bg: #eef2f8;
+  --surface: #ffffff;
+  --surface2: #f4f7fb;
+  --text: #0f1c2e;
+  --muted: #5b6b82;
+  --border: #e4e9f1;
+  --primary: #1565d8;
+  --primarysoft: #e6f0ff;
+  --r: 16px;
+  --shadow: 0 1px 2px rgba(16, 30, 54, 0.05), 0 6px 18px -6px rgba(16, 30, 54, 0.1);
+  --sidebar: #0c1a30;
+  --sidebar-muted: rgba(159, 176, 199, 0.75);
+  --topbar: #ffffff;
+}
+
+[data-theme='vibrante'] {
+  --bg: #f3f0fb;
+  --surface: #ffffff;
+  --surface2: #f8f4ff;
+  --text: #1c1340;
+  --muted: #6b5e94;
+  --border: #ece5f8;
+  --primary: #6d28d9;
+  --primarysoft: #f1e9ff;
+  --r: 20px;
+  --shadow: 0 8px 28px -10px rgba(91, 33, 182, 0.22);
+  --sidebar: linear-gradient(180deg, #5b21b6, #312e81);
+  --sidebar-muted: rgba(203, 187, 240, 0.8);
+  --topbar: #ffffff;
+}
+
+[data-theme='escuro'] {
+  --bg: #070d1a;
+  --surface: #0f1729;
+  --surface2: #15203a;
+  --text: #e6edf7;
+  --muted: #8aa0bf;
+  --border: #1f2c47;
+  --primary: #3b82f6;
+  --primarysoft: #16263f;
+  --r: 16px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 10px 28px -10px rgba(0, 0, 0, 0.55);
+  --sidebar: #0a1120;
+  --sidebar-muted: #7b90b0;
+  --topbar: #0f1729;
+}
+
+/* Cores de status/tipo (estáveis entre temas, vindas de statusStyle()/tipoStyle() do protótipo). */
+:root {
+  --status-aberta-fg: #1d4ed8;
+  --status-aberta-bg: #e3edff;
+  --status-andamento-fg: #b45309;
+  --status-andamento-bg: #fff1d6;
+  --status-aguardando-fg: #7c3aed;
+  --status-aguardando-bg: #f0e8ff;
+  --status-pronto-fg: #0e7490;
+  --status-pronto-bg: #d5f1f7;
+  --status-entregue-fg: #047857;
+  --status-entregue-bg: #d8f3e6;
+  --status-cancelada-fg: #b91c1c;
+  --status-cancelada-bg: #fde2e2;
+  --tipo-venda-fg: #047857;
+  --tipo-venda-bg: #d8f3e6;
+  --tipo-assistencia-fg: #1d4ed8;
+  --tipo-assistencia-bg: #e3edff;
+}

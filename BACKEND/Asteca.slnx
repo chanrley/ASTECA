@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Asteca.Api/Asteca.Api.csproj" />
+    <Project Path="src/Asteca.Domain/Asteca.Domain.csproj" />
+    <Project Path="src/Asteca.Infrastructure/Asteca.Infrastructure.csproj" />
+  </Folder>
+</Solution>
