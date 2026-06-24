@@ -8,6 +8,7 @@ import { OrdemDetailPage } from '../pages/OrdemDetailPage'
 import { ClientesListPage } from '../pages/ClientesListPage'
 import { ClienteDetailPage } from '../pages/ClienteDetailPage'
 import { ConsultaPage } from '../pages/ConsultaPage'
+import { FaturamentoPage } from '../pages/FaturamentoPage'
 
 export function AppRoutes() {
   return (
@@ -20,6 +21,7 @@ export function AppRoutes() {
 
           <Route element={<ProtectedRoute role="Gestor" />}>
             <Route path="dashboard" element={<DashboardPage />} />
+            <Route path="faturamento" element={<FaturamentoPage />} />
           </Route>
 
           <Route path="ordens" element={<OrdensListPage />} />

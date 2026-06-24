@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { useDashboard } from '../hooks/api/useDashboard'
 import { EmptyState } from '../components/shared/EmptyState'
+import { StatusBadge } from '../components/ordens/StatusBadge'
 import { formatarMoeda } from '../utils/format'
 import { statusLabel } from '../utils/format'
 import type { StatusOrdemServico } from '../api/types'
@@ -80,7 +81,7 @@ export function DashboardPage() {
                   {o.marca} {o.modelo}
                 </div>
               </div>
-              <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)' }}>{statusLabel(o.status)}</span>
+              <StatusBadge status={o.status} />
               <div className={styles.recentValor}>{formatarMoeda(o.valor)}</div>
             </button>
           ))}

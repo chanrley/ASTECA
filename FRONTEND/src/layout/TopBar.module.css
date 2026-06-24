@@ -122,3 +122,31 @@
     display: none;
   }
 }
+
+/* Preview "ver como celular" (frame fixo de 390px) não muda a viewport real,
+   então os media queries acima não disparam — replica as mesmas regras via
+   o atributo setado pelo AppLayout (ver global.css para o mesmo padrão).
+   Diferente do real @media acima, aqui os controles (tema/voltar ao desktop)
+   não podem ficar escondidos — seriam a única forma de saída do preview —
+   então em vez de esconder, eles quebram para uma segunda linha. */
+:global([data-view-mode='mobile']) .brandSubtitle,
+:global([data-view-mode='mobile']) .userText {
+  display: none;
+}
+
+:global([data-view-mode='mobile']) .header {
+  flex-wrap: wrap;
+  height: auto;
+  padding: 10px 18px;
+  row-gap: 8px;
+}
+
+:global([data-view-mode='mobile']) .controls {
+  order: 3;
+  flex-basis: 100%;
+  justify-content: flex-start;
+}
+
+:global([data-view-mode='mobile']) .divider {
+  display: none;
+}

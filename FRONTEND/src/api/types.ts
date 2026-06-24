@@ -103,3 +103,16 @@ export interface DashboardResponse {
   distribuicaoPorStatus: Record<string, number>
   aparelhosProntos: OrdemServicoDto[]
 }
+
+export interface FaturamentoMesDto {
+  ano: number
+  mes: number
+  total: number
+  quantidade: number
+}
+
+export interface FaturamentoMensalResponse {
+  meses: FaturamentoMesDto[]
+  total: number
+  quantidade: number
+}

@@ -24,3 +24,13 @@
   background: transparent;
   color: var(--muted);
 }
+
+:global([data-view-mode='mobile']) .group {
+  gap: 4px;
+  padding: 3px;
+}
+
+:global([data-view-mode='mobile']) .group button {
+  padding: 5px 8px;
+  font-size: 11px;
+}

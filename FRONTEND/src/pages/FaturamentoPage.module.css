@@ -1,0 +1,158 @@
+.tabs {
+  display: flex;
+  gap: 6px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 5px;
+  border-radius: 13px;
+  width: fit-content;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9px;
+  font: 700 12.5px var(--font-ui);
+  background: transparent;
+  color: var(--muted);
+}
+
+.tab.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.filtros {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.periodoFixo {
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: var(--primarysoft);
+  color: var(--primary);
+  font: 700 13px var(--font-ui);
+}
+
+.select,
+.dateInput {
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface2);
+  color: var(--text);
+  font: 600 13px var(--font-ui);
+}
+
+.ate {
+  font: 600 12px var(--font-ui);
+  color: var(--muted);
+}
+
+.errorText {
+  font: 600 13px var(--font-ui);
+  color: #c43b3b;
+  margin-bottom: 16px;
+}
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+  max-width: 460px;
+}
+
+.kpiCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.kpiLabel {
+  font: 600 12px var(--font-ui);
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.kpiValue {
+  font: 800 24px var(--font-ui);
+  color: var(--text);
+  letter-spacing: -0.5px;
+}
+
+.tabela {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.linhaHeader {
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
+  background: var(--surface2);
+  font: 700 10px var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  padding: 13px 18px;
+  border-top: 1px solid var(--border);
+}
+
+.colMes {
+  width: 130px;
+  flex-shrink: 0;
+  font: 700 13px var(--font-ui);
+  color: var(--text);
+}
+
+.colBarra {
+  flex: 1;
+  min-width: 0;
+  padding: 0 14px;
+}
+
+.barraTrack {
+  height: 7px;
+  border-radius: 6px;
+  background: var(--surface2);
+  overflow: hidden;
+}
+
+.barraFill {
+  height: 100%;
+  border-radius: 6px;
+  background: #0f9d6b;
+}
+
+.colQtd {
+  width: 50px;
+  flex-shrink: 0;
+  text-align: right;
+  font: 600 12.5px var(--font-ui);
+  color: var(--muted);
+}
+
+.colValor {
+  width: 120px;
+  flex-shrink: 0;
+  text-align: right;
+  font: 700 13px var(--font-mono);
+  color: var(--text);
+}

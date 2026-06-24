@@ -47,6 +47,16 @@ export function Sidebar({ onNovaOs }: { onNovaOs: () => void }) {
         <span>Consultar</span>
       </NavLink>
 
+      {isGestor(usuario?.papel) && (
+        <NavLink to="/faturamento" className={navClass}>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 21h18" />
+            <path d="M6 21V10M12 21V6M18 21v-7" />
+          </svg>
+          <span>Faturamento</span>
+        </NavLink>
+      )}
+
       <div className={styles.grow} />
 
       <div className={styles.infoBox}>
