@@ -6,6 +6,7 @@
   padding: 18px 14px;
   gap: 4px;
   overflow-y: auto;
+  border-radius: 10px;
 }
 
 .menuLabel {

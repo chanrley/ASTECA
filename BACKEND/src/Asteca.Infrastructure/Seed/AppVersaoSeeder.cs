@@ -14,6 +14,7 @@ public static class AppVersaoSeeder
         ("v1.0.0", "Versão inicial do Asteca Web"),
         ("v1.1.0", "Faturamento"),
         ("v1.1.1", "Nova modal de impressão em papel A4"),
+        ("v1.1.2", "Logo padrão adicionada"),
     ];
 
     public static async Task SeedAsync(AstecaDbContext db)

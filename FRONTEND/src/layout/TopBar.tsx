@@ -6,7 +6,7 @@ import { ViewModeSwitcher } from '../components/shared/ViewModeSwitcher'
 import { VersoesModal } from '../components/shared/VersoesModal'
 import styles from './TopBar.module.css'
 
-const VERSAO_ATUAL = 'v1.1.1'
+const VERSAO_ATUAL = 'v1.1.2'
 
 export function TopBar() {
   const { usuario, logout } = useAuth()
@@ -24,11 +24,7 @@ export function TopBar() {
     <header className={`no-print ${styles.header}`}>
       <div className={styles.brand}>
         <div className={styles.logo}>
-          <span>izzi</span>
-        </div>
-        <div className={styles.brandText}>
-          <div className={styles.brandTitle}>IZZI CELULARES</div>
-          <div className={styles.brandSubtitle}>Vendas · Assistência Técnica</div>
+          <img src="/izzi-logo.png" alt="Izzi Celulares" />
         </div>
         <button className={styles.versionBadge} onClick={() => setShowVersoes(true)} title="Ver histórico de versões">
           {VERSAO_ATUAL}
