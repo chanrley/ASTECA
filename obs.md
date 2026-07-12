@@ -16,3 +16,6 @@
     ### DOCKER:
     Comando docker para subir tudo:
         docker-compose up -d --build --force-recreate
+## 09/07/26
+    Adicionado botão de impressão
+    

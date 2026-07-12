@@ -2,26 +2,83 @@
   position: absolute;
   inset: 0;
   z-index: 50;
-  background: rgba(8, 15, 30, 0.55);
+  background: rgba(8, 15, 30, 0.72);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 20px;
-  backdrop-filter: blur(2px);
+  overflow: auto;
 }
 
-.dialog {
+.toolbar {
   width: 100%;
-  max-width: 420px;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 4px 16px;
+  color: #fff;
+}
+
+.toolbarTitle {
+  font: 700 13px var(--font-ui);
+  color: #dce4f2;
+}
+
+.toolbarActions {
+  display: flex;
+  gap: 10px;
+}
+
+.pageWrap {
+  width: 100%;
+  max-width: 794px;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 794px;
+  min-height: calc(794px * 297 / 210);
   background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 24px 70px -20px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 24px 70px -20px rgba(0, 0, 0, 0.6);
   color: #111;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.via {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  break-inside: avoid;
+}
+
+.cutLine {
+  flex: none;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #bbb;
+  font: 700 13.2px var(--font-ui);
+  padding: 6px 0;
+}
+
+.rotulo {
+  margin-left: auto;
+  font: 800 12px var(--font-ui);
+  letter-spacing: 1.5px;
+  color: #1565d8;
+  background: #eaf1fc;
+  padding: 4px 9px;
+  border-radius: 999px;
 }
 
 .header {
-  padding: 20px 22px;
+  padding-bottom: 14px;
   border-bottom: 1px dashed #d0d0d0;
   display: flex;
   align-items: center;
@@ -39,38 +96,41 @@
 }
 
 .logo span {
-  font: 800 16px var(--font-ui);
+  font: 800 19.2px var(--font-ui);
   color: #fff;
   font-style: italic;
 }
 
 .brandTitle {
-  font: 800 13px var(--font-ui);
+  font: 800 15.6px var(--font-ui);
   color: #111;
 }
 
 .brandSubtitle {
-  font: 500 10px var(--font-ui);
+  font: 500 12px var(--font-ui);
   color: #777;
 }
 
 .body {
-  padding: 20px 22px;
+  padding-top: 12px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .eyebrow {
   text-align: center;
   font: 700 12px var(--font-ui);
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   color: #777;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .rows {
   display: flex;
   flex-direction: column;
-  gap: 9px;
-  font: 500 12.5px var(--font-ui);
+  gap: 5px;
+  font: 500 13.2px var(--font-ui);
   color: #333;
 }
 
@@ -97,35 +157,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 18px;
-  padding-top: 16px;
+  margin-top: 10px;
+  padding-top: 10px;
   border-top: 1px dashed #d0d0d0;
 }
 
 .totalLabel {
-  font: 700 14px var(--font-ui);
+  font: 700 14.4px var(--font-ui);
   color: #111;
 }
 
 .totalValue {
-  font: 800 22px var(--font-mono);
+  font: 800 20.4px var(--font-mono);
   color: #1565d8;
 }
 
-.garantia {
-  margin-top: 18px;
-  text-align: center;
-  font: 500 10px var(--font-ui);
-  color: #999;
-  line-height: 1.6;
+.observacoes {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed #d0d0d0;
+  font: 500 13.2px var(--font-ui);
 }
 
-.footer {
-  padding: 14px 22px;
-  border-top: 1px solid #eee;
+.observacoes p {
+  margin: 3px 0 0;
+  font: 500 12.6px/1.5 var(--font-ui);
+  color: #444;
+}
+
+.termos {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed #e2e2e2;
   display: flex;
-  gap: 10px;
-  justify-content: flex-end;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.termos p {
+  margin: 0;
+  text-align: justify;
+  font: 400 11.5px/1.45 var(--font-ui);
+  color: #888;
 }
 
 .btnSecondary {
@@ -147,14 +220,28 @@
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
   .overlay {
     position: fixed;
     background: #fff;
-    backdrop-filter: none;
     align-items: flex-start;
     padding: 0;
   }
-  .footer {
+  .toolbar {
     display: none;
+  }
+  .pageWrap {
+    max-width: none;
+  }
+  .page {
+    max-width: none;
+    width: 100%;
+    min-height: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
   }
 }

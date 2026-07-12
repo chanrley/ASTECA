@@ -56,6 +56,21 @@
   margin-top: 3px;
 }
 
+.versionBadge {
+  font: 700 10.5px var(--font-mono);
+  color: var(--muted);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 3px 8px;
+  flex-shrink: 0;
+}
+
+.versionBadge:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
 .spacer {
   flex: 1;
 }

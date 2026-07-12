@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { useNovaOsModal } from '../../hooks/useNovaOsModal'
 import { useCreateOrdem } from '../../hooks/api/useOrdens'
 import { useToast } from '../shared/Toast'
-import type { TipoOrdemServico } from '../../api/types'
+import { ReciboModal } from './ReciboModal'
+import type { OrdemServicoDto, TipoOrdemServico } from '../../api/types'
 import styles from './NovaOsModal.module.css'
 
 interface FormState {
@@ -45,9 +46,20 @@ function parseValorBr(valor: string): number {
 export function NovaOsModal() {
   const { aberto, fechar } = useNovaOsModal()
   const [form, setForm] = useState<FormState>(FORM_VAZIO)
+  const [osSalva, setOsSalva] = useState<OrdemServicoDto | null>(null)
   const criar = useCreateOrdem()
   const { showToast } = useToast()
   const navigate = useNavigate()
+
+  function irParaOrdem() {
+    const os = osSalva
+    setOsSalva(null)
+    if (os) navigate(`/ordens/${os.id}`)
+  }
+
+  if (osSalva) {
+    return <ReciboModal ordem={osSalva} onClose={irParaOrdem} closeLabel="Não imprimir" />
+  }
 
   if (!aberto) return null
 
@@ -100,8 +112,9 @@ export function NovaOsModal() {
         observacoes: form.observacoes.trim() || null,
       })
       showToast(`OS ${novaOs.numero} salva com sucesso`)
-      fecharEResetar()
-      navigate(`/ordens/${novaOs.id}`)
+      setForm(FORM_VAZIO)
+      fechar()
+      setOsSalva(novaOs)
     } catch {
       showToast('Não foi possível salvar a OS. Tente novamente.')
     }

@@ -1,5 +1,6 @@
 using Asteca.Api.Contracts.Clientes;
 using Asteca.Api.Contracts.Ordens;
+using Asteca.Api.Contracts.Versoes;
 using Asteca.Domain.Entities;
 
 namespace Asteca.Api.Mapping;
@@ -30,4 +31,6 @@ public static class MappingExtensions
             o.Status.ToString(), o.Observacoes,
             o.HistoricoEventos.OrderByDescending(h => h.DataHora).Select(h => new HistoricoEventoDto(h.Evento, h.DataHora)).ToList());
     }
+
+    public static VersaoDto ToDto(this AppVersao v) => new(v.Id, v.Versao, v.Mensagem, v.CriadoEm);
 }

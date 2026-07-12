@@ -1,5 +1,8 @@
+name: astecawebinfra
+
 services:
   backend:
+    container_name: astecawebbackend
     build:
       context: ..
       dockerfile: INFRA/backend.Dockerfile
@@ -15,6 +18,7 @@ services:
     restart: unless-stopped
 
   frontend:
+    container_name: astecawebfrontend
     build:
       context: ..
       dockerfile: INFRA/frontend.Dockerfile

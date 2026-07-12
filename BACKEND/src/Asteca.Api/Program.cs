@@ -63,6 +63,7 @@ using (var scope = app.Services.CreateScope())
     var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
     await db.Database.MigrateAsync();
     await DbSeeder.SeedAsync(db, logger, builder.Configuration["Seed:DataPath"]);
+    await AppVersaoSeeder.SeedAsync(db);
 }
 
 if (app.Environment.IsDevelopment())

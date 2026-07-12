@@ -1,12 +1,17 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { ThemeSwitcher } from '../components/shared/ThemeSwitcher'
 import { ViewModeSwitcher } from '../components/shared/ViewModeSwitcher'
+import { VersoesModal } from '../components/shared/VersoesModal'
 import styles from './TopBar.module.css'
+
+const VERSAO_ATUAL = 'v1.1.1'
 
 export function TopBar() {
   const { usuario, logout } = useAuth()
   const navigate = useNavigate()
+  const [showVersoes, setShowVersoes] = useState(false)
 
   async function handleLogout() {
     await logout()
@@ -25,6 +30,9 @@ export function TopBar() {
           <div className={styles.brandTitle}>IZZI CELULARES</div>
           <div className={styles.brandSubtitle}>Vendas · Assistência Técnica</div>
         </div>
+        <button className={styles.versionBadge} onClick={() => setShowVersoes(true)} title="Ver histórico de versões">
+          {VERSAO_ATUAL}
+        </button>
       </div>
 
       <div className={styles.spacer} />
@@ -34,6 +42,8 @@ export function TopBar() {
         <ViewModeSwitcher />
         <div className={styles.divider} />
       </div>
+
+      {showVersoes && <VersoesModal onClose={() => setShowVersoes(false)} />}
 
       <button className={styles.userButton} onClick={handleLogout} title="Sair">
         <div className={styles.avatar}>{inicial}</div>

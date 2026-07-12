@@ -50,6 +50,19 @@
   border: 1px solid var(--border);
 }
 
+.printButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  padding: 6px 11px;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  background: var(--surface2);
+  color: var(--text);
+  font: 700 11.5px var(--font-ui);
+}
+
 .subtitle {
   font: 600 14px var(--font-ui);
   color: var(--muted);

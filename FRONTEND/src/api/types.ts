@@ -46,6 +46,13 @@ export interface HistoricoEventoDto {
   dataHora: string
 }
 
+export interface VersaoDto {
+  id: number
+  versao: string
+  mensagem: string
+  criadoEm: string
+}
+
 export interface OrdemServicoDto {
   id: number
   numero: number
