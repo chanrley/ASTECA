@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 name: astecawebinfra
 
 services:
   backend:
     container_name: astecawebbackend
+=======
+name: astecaweb-infra
+
+services:
+  backend:
+    container_name: astecaweb-backend
+>>>>>>> 60d9034990ce2051c1f5c5582db1b2325b795163
     build:
       context: ..
       dockerfile: INFRA/backend.Dockerfile
@@ -18,7 +26,11 @@ services:
     restart: unless-stopped
 
   frontend:
+<<<<<<< HEAD
     container_name: astecawebfrontend
+=======
+    container_name: astecaweb-frontend
+>>>>>>> 60d9034990ce2051c1f5c5582db1b2325b795163
     build:
       context: ..
       dockerfile: INFRA/frontend.Dockerfile
